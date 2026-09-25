@@ -1,0 +1,15 @@
+{
+  "name": "四级备考工作台",
+  "short_name": "四级备考",
+  "description": "大学英语四级（CET-4）个人备考工作台：词汇、听力、阅读、写作、翻译、自测与打卡。",
+  "lang": "zh-CN",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f3ea",
+  "theme_color": "#1f2a44",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
