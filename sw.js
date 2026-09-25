@@ -1,6 +1,6 @@
 /* 四级备考工作台 · Service Worker（离线可开 + 添加到主屏幕）
    策略：网络优先（在线永远拿最新内容），断网时回退缓存。 */
-const CACHE = 'cet4-v5';
+const CACHE = 'cet4-v6';
 const ASSETS = [
   './', 'index.html', 'vocab.html', 'listening.html', 'reading.html',
   'writing.html', 'translation.html', 'checkin.html',
@@ -9,7 +9,11 @@ const ASSETS = [
   'assets/js/store.js', 'assets/js/app.js', 'assets/js/scorer.js',
   'assets/js/vocab-data.js', 'assets/js/vocab-data-cet4b.js',
   'assets/js/vocab-data-cet6a.js', 'assets/js/vocab-data-cet6b.js', 'assets/js/vocab-data-cet6c.js',
-  'assets/js/vocab.js',
+  'assets/js/vocab-data-ext1.js', 'assets/js/vocab-data-ext2.js', 'assets/js/vocab-data-ext3.js',
+  'assets/js/vocab-data-ext4.js', 'assets/js/vocab-data-ext5.js', 'assets/js/vocab-data-ext6.js',
+  'assets/js/vocab-data-ext7.js', 'assets/js/vocab-data-ext8.js', 'assets/js/vocab-data-ext9.js',
+  'assets/js/vocab-meta.js',
+  'assets/js/vocab.js', 'assets/js/dictball.js',
   'assets/js/listening-data.js', 'assets/js/listening.js',
   'assets/js/reading-data.js', 'assets/js/reading-extra.js', 'assets/js/reading-daily.js', 'assets/js/reading.js',
   'assets/js/writing-data.js', 'assets/js/writing.js',
