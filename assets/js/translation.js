@@ -6,33 +6,7 @@
 
   function pct(r) { return Math.round(r * 100); }
 
-  function reportHTML(r) {
-    return `<div class="card" style="margin-top:12px;border-color:var(--accent)">
-      <div class="row" style="align-items:flex-start">
-        <span class="c-ico">🤖</span>
-        <div style="flex:1">
-          <div class="row"><strong style="font-size:17px">估分 ${r.score} / 15</strong>
-            <span class="pill">${r.band}</span>
-            <span class="tag">≈ 报告分 ${r.report}</span></div>
-          <div class="muted" style="font-size:13px;margin-top:4px">你的译文 ${r.myWords} 词 ｜ 参考译文 ${r.refWords} 词</div>
-        </div>
-      </div>
-      <div style="margin-top:12px">
-        ${r.items.map(it => `
-          <div style="margin-bottom:8px">
-            <div class="row" style="justify-content:space-between;font-size:13.5px">
-              <span>${it.label}</span><span class="muted">${pct(it.rate)}%</span>
-            </div>
-            <div class="bar" style="height:8px;margin-top:3px"><i style="width:${pct(it.rate)}%"></i></div>
-            <div class="muted" style="font-size:12.5px;margin-top:2px">${it.text}</div>
-          </div>`).join('')}
-      </div>
-      ${r.hit && r.hit.length ? `<div style="margin-top:8px"><b>✅ 已命中表达：</b>${r.hit.map(k => `<span class="tag">${k}</span>`).join('')}</div>` : ''}
-      ${r.miss && r.miss.length ? `<div style="margin-top:6px"><b>⚠️ 未命中表达：</b>${r.miss.map(k => `<span class="tag">${k}</span>`).join('')}</div>` : ''}
-      ${r.tips && r.tips.length ? `<div class="note" style="margin-top:10px">💡 改进建议：${r.tips.map(t => `<div>· ${t}</div>`).join('')}</div>` : ''}
-      <div class="muted" style="font-size:12px;margin-top:8px">${r.note}</div>
-    </div>`;
-  }
+  function reportHTML(r) { return window.Scorer.reportHTML(r); }
 
   function render() {
     document.getElementById('transCards').innerHTML = DATA.map((m, i) => {
