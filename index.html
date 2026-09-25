@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=4">
+<link rel="stylesheet" href="assets/css/styles.css?v=5">
 </head>
 <body data-page="index">
 <aside id="sidebar"></aside>
@@ -57,24 +57,30 @@
 <script src="assets/js/store.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/vocab-data.js"></script>
+<script src="assets/js/vocab-data-cet4b.js"></script>
 <script src="assets/js/vocab-data-cet6a.js"></script>
 <script src="assets/js/vocab-data-cet6b.js"></script>
+<script src="assets/js/vocab-data-cet6c.js"></script>
+<script src="assets/js/reading-data.js"></script>
+<script src="assets/js/reading-extra.js"></script>
+<script src="assets/js/reading-daily.js"></script>
 <script>
   const MODULES = [
     { key:'vocab', href:'vocab.html', ico:'📚', title:'词汇本', desc:'四级高频核心词闪卡，标记已掌握' },
     { key:'listening', href:'listening.html', ico:'🎧', title:'听力', desc:'精听/跟读方法 + 真实听力文本' },
-    { key:'reading', href:'reading.html', ico:'📖', title:'阅读', desc:'三题型真实例题与逐题解析' },
+    { key:'reading', href:'reading.html', ico:'📖', title:'阅读', desc:'仔细阅读 · 真题篇幅，每天自动更新' },
     { key:'writing', href:'writing.html', ico:'✍️', title:'写作', desc:'三段式模板、句型库与范文' },
     { key:'translation', href:'translation.html', ico:'🌐', title:'翻译', desc:'中国文化类真实素材与对照' },
-    { key:'quiz', href:'quiz.html', ico:'🃏', title:'自测', desc:'词汇/语法小题库，答完即时反馈' },
     { key:'checkin', href:'checkin.html', ico:'✅', title:'打卡', desc:'每日任务清单 + 连续天数' },
     { key:'index', href:'index.html', ico:'📊', title:'总览', desc:'倒计时 / 进度 / 节奏一览' },
   ];
 
   function buildProgress() {
     const mastered = (Store.get('vocabMastered', []) || []).length;
-    const total = ((window.VOCAB || []).length + (window.VOCAB6A || []).length + (window.VOCAB6B || []).length) || 1;
-    const quizBest = Store.get('quizBest', 0);
+    const total = ((window.VOCAB || []).length + (window.VOCAB4B || []).length +
+      (window.VOCAB6A || []).length + (window.VOCAB6B || []).length + (window.VOCAB6C || []).length) || 1;
+    const readTotal = ((window.READING || []).length + (window.READING_EXTRA || []).length +
+      ((window.READING_DAILY && window.READING_DAILY.passages) || []).length) || 1;
     const checkinDates = Store.get('checkinDates', []) || [];
     const readingDone = (Store.get('readingDone', []) || []).length;
     const listeningDone = (Store.get('listeningDone', []) || []).length;
@@ -84,10 +90,9 @@
     const rows = [
       { ico:'📚', name:'词汇本', cur:mastered, max:total, unit:'词' },
       { ico:'🎧', name:'听力', cur:listeningDone, max:2, unit:'篇' },
-      { ico:'📖', name:'阅读', cur:readingDone, max:2, unit:'篇' },
+      { ico:'📖', name:'阅读', cur:readingDone, max:readTotal, unit:'篇' },
       { ico:'✍️', name:'写作', cur:writingCount, max:null, unit:'篇' },
-      { ico:'🌐', name:'翻译', cur:transDone, max:5, unit:'段' },
-      { ico:'🃏', name:'自测', cur:quizBest, max:null, unit:'最佳分' },
+      { ico:'🌐', name:'翻译', cur:transDone, max:10, unit:'段' },
     ];
     document.getElementById('progressCards').innerHTML = rows.map(r => {
       const pct = r.max ? Math.min(100, Math.round(r.cur / r.max * 100)) : (r.cur > 0 ? 100 : 0);
