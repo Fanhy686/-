@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f2a44">
+<title>总览 · 四级备考工作台</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="index">
+<aside id="sidebar"></aside>
+<main>
+  <div class="page-head">
+    <h1>📊 总览</h1>
+    <p class="sub">你的四级备考驾驶舱——剩下的时间、今天的节奏、各模块进度，一眼看清。</p>
+  </div>
+
+  <div class="cards c3">
+    <div class="card">
+      <div class="c-ico">⏳</div>
+      <div class="stat" style="margin-top:10px">
+        <div class="num accent" id="cdDays">--</div>
+        <div class="lab">距离 2026-12-12 考试（天）</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="c-ico">🔥</div>
+      <div class="stat" style="margin-top:10px">
+        <div class="num" id="streak">0</div>
+        <div class="lab">连续打卡（天）</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="c-ico">🎯</div>
+      <div class="stat" style="margin-top:10px">
+        <div class="num">425</div>
+        <div class="lab">目标分（保过线）</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">💡 每天点开「✅ 打卡」完成当日任务即可累计连续天数；各模块进度自动保存到本机，关掉浏览器不丢。</div>
+
+  <h2 class="section-title"><span class="ico">🧭</span>模块进度</h2>
+  <div class="cards c2" id="progressCards"></div>
+
+  <h2 class="section-title"><span class="ico">🚪</span>进入模块</h2>
+  <div class="cards c4" id="entryCards"></div>
+
+  <hr>
+  <div class="note">📌 本工作台为纯前端应用，数据保存在你本机浏览器。建议用手机浏览器打开后「添加到主屏幕」，即可像 App 一样离线使用。</div>
+</main>
+
+<script src="assets/js/store.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/vocab-data.js"></script>
+<script>
+  const MODULES = [
+    { key:'vocab', href:'vocab.html', ico:'📚', title:'词汇本', desc:'四级高频核心词闪卡，标记已掌握' },
+    { key:'listening', href:'listening.html', ico:'🎧', title:'听力', desc:'精听/跟读方法 + 真实听力文本' },
+    { key:'reading', href:'reading.html', ico:'📖', title:'阅读', desc:'三题型真实例题与逐题解析' },
+    { key:'writing', href:'writing.html', ico:'✍️', title:'写作', desc:'三段式模板、句型库与范文' },
+    { key:'translation', href:'translation.html', ico:'🌐', title:'翻译', desc:'中国文化类真实素材与对照' },
+    { key:'quiz', href:'quiz.html', ico:'🃏', title:'自测', desc:'词汇/语法小题库，答完即时反馈' },
+    { key:'checkin', href:'checkin.html', ico:'✅', title:'打卡', desc:'每日任务清单 + 连续天数' },
+    { key:'index', href:'index.html', ico:'📊', title:'总览', desc:'倒计时 / 进度 / 节奏一览' },
+  ];
+
+  function buildProgress() {
+    const mastered = (Store.get('vocabMastered', []) || []).length;
+    const total = (window.VOCAB || []).length || 1;
+    const quizBest = Store.get('quizBest', 0);
+    const checkinDates = Store.get('checkinDates', []) || [];
+    const readingDone = (Store.get('readingDone', []) || []).length;
+    const listeningDone = (Store.get('listeningDone', []) || []).length;
+    const writingCount = Store.get('writingCount', 0);
+    const transDone = (Store.get('transDone', []) || []).length;
+
+    const rows = [
+      { ico:'📚', name:'词汇本', cur:mastered, max:total, unit:'词' },
+      { ico:'🎧', name:'听力', cur:listeningDone, max:3, unit:'篇' },
+      { ico:'📖', name:'阅读', cur:readingDone, max:3, unit:'篇' },
+      { ico:'✍️', name:'写作', cur:writingCount, max:null, unit:'篇' },
+      { ico:'🌐', name:'翻译', cur:transDone, max:5, unit:'段' },
+      { ico:'🃏', name:'自测', cur:quizBest, max:null, unit:'最佳分' },
+    ];
+    document.getElementById('progressCards').innerHTML = rows.map(r => {
+      const pct = r.max ? Math.min(100, Math.round(r.cur / r.max * 100)) : (r.cur > 0 ? 100 : 0);
+      const right = r.max == null ? `${r.cur} ${r.unit}` : `${r.cur}/${r.max} ${r.unit}`;
+      return `<div class="card">
+        <div class="row"><span class="c-ico">${r.ico}</span><strong>${r.name}</strong><span class="spacer"></span><span class="muted">${right}</span></div>
+        <div class="bar" style="margin-top:10px"><i style="width:${pct}%"></i></div>
+      </div>`;
+    }).join('');
+  }
+
+  function buildEntries() {
+    document.getElementById('entryCards').innerHTML = MODULES.filter(m => m.key !== 'index').map(m => `
+      <a class="card link" href="${m.href}">
+        <div class="c-ico">${m.ico}</div>
+        <div class="c-title">${m.title}</div>
+        <div class="c-desc">${m.desc}</div>
+      </a>`).join('');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('cdDays').textContent = daysUntil(EXAM_DATE);
+    document.getElementById('streak').textContent = streakCount(Store.get('checkinDates', []) || []);
+    buildProgress();
+    buildEntries();
+  });
+</script>
+</body>
+</html>
