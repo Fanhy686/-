@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=5">
+<link rel="stylesheet" href="assets/css/styles.css?v=6">
 </head>
 <body data-page="listening">
 <aside id="sidebar"></aside>
@@ -18,10 +18,12 @@
     <p class="sub">长音频训练：材料按真题长度编写，点开即用浏览器朗读（可调语速、可循环），每篇 5 题。</p>
   </div>
 
-  <div class="note">📌 方法：① 先不看文稿盲听 1 遍 → ② 再听 1 遍速记要点（who / what / when / why）→ ③ 做题 → ④ 开着文稿跟读（shadowing：播放一句立刻模仿跟说）→ ⑤ 看解析。</div>
+  <section id="listSec">
+    <div class="note">📌 方法：① 先不看文稿盲听 1 遍 → ② 再听 1 遍速记要点（who / what / when / why）→ ③ 做题 → ④ 开着文稿跟读（shadowing：播放一句立刻模仿跟说）→ ⑤ 看解析。</div>
 
-  <h2 class="section-title"><span class="ico">📁</span>听力材料</h2>
-  <div class="cards c3" id="matCards"></div>
+    <h2 class="section-title"><span class="ico">📁</span>听力材料（点标题进入练习）</h2>
+    <div class="cards c3" id="matCards"></div>
+  </section>
 
   <div id="detail"></div>
 </main>
@@ -30,5 +32,6 @@
 <script src="assets/js/app.js"></script>
 <script src="assets/js/listening-data.js"></script>
 <script src="assets/js/listening.js"></script>
+<script src="assets/js/dictball.js"></script>
 </body>
 </html>
