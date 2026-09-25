@@ -47,7 +47,9 @@
 
   function renderDetail() {
     const box = document.getElementById('detail');
-    if (current < 0) { box.innerHTML = ''; return; }
+    const listSec = document.getElementById('listSec');
+    if (current < 0) { box.innerHTML = ''; if (listSec) listSec.style.display = ''; return; }
+    if (listSec) listSec.style.display = 'none';
     const m = DATA[current];
     const qs = m.questions.map((q, qi) => `
       <div class="q" id="rq-${qi}">
@@ -59,7 +61,12 @@
       </div>`).join('');
 
     box.innerHTML = `
-      <div class="card" style="margin-top:18px">
+      <div class="sub-bar">
+        <button class="btn sm ghost" id="backTop">↩️ 返回列表</button>
+        <span class="spacer"></span>
+        <span class="pill">第 ${current + 1} / ${DATA.length} 篇</span>
+      </div>
+      <div class="card">
         <div class="row"><span class="c-ico">📄</span><strong>${m.title}</strong>
           ${m.daily ? `<span class="tag">🗓️ ${m.date || ''}</span>` : ''}</div>
         <div class="note" style="margin-top:10px">💡 ${m.intro}</div>
@@ -92,7 +99,10 @@
       done.add(keyOf(m)); Store.set('readingDone', [...done]); renderCards();
       toast('已记录完成');
     };
-    document.getElementById('backBtn').onclick = () => { current = -1; renderDetail(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+    const back = () => { current = -1; renderDetail(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+    document.getElementById('backBtn').onclick = back;
+    const bt = document.getElementById('backTop');
+    if (bt) bt.onclick = back;
   }
 
   document.addEventListener('DOMContentLoaded', () => { renderBanner(); renderCards(); });
