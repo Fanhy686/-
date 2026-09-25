@@ -165,19 +165,48 @@ input:focus,select:focus{outline:2px solid rgba(217,154,43,.4);border-color:var(
   opacity:0;pointer-events:none;transition:.25s;z-index:50;box-shadow:var(--shadow)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
-/* ===== 响应式：手机端同布局，侧边栏收窄为图标栏 ===== */
+/* ===== 响应式：手机端导航移至底部，变横向标签栏 ===== */
 @media(max-width:768px){
-  :root{--sidebar-w:74px}
-  #sidebar{padding:16px 8px;align-items:center}
-  #sidebar .brand{font-size:0;padding:4px 0 12px;justify-content:center;border-bottom:none}
-  #sidebar .brand .logo{font-size:26px}
-  #sidebar .brand .name{display:none}
-  #sidebar nav a{justify-content:center;padding:11px 0;font-size:0;gap:0}
-  #sidebar nav a .ico{font-size:22px}
-  #sidebar nav a .label{display:none}
+  #sidebar{
+    top:auto;left:0;right:0;bottom:0;width:auto;height:auto;
+    flex-direction:row;align-items:stretch;
+    padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px));
+    border-right:none;border-top:1px solid rgba(255,255,255,.10);
+    box-shadow:0 -6px 20px rgba(31,42,68,.16);
+    z-index:40;
+  }
+  #sidebar .brand,
   #sidebar .side-foot{display:none}
-  main{padding:22px 16px 56px}
-  .page-head h1{font-size:24px}
+  #sidebar nav{
+    flex-direction:row;flex:1;gap:0;overflow:visible;
+    justify-content:space-between;
+  }
+  #sidebar nav a{
+    flex:1 1 0;min-width:0;
+    flex-direction:column;align-items:center;justify-content:center;gap:2px;
+    padding:6px 2px;border-radius:11px;
+    font-size:10.5px;line-height:1.2;color:#b9c2d8;
+  }
+  #sidebar nav a .ico{font-size:19px;width:auto;line-height:1}
+  #sidebar nav a .label{
+    display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    max-width:100%;font-size:10.5px;
+  }
+  #sidebar nav a:active{background:rgba(255,255,255,.08)}
+  #sidebar nav a.active{background:var(--accent);color:#1f1408;font-weight:700}
+
+  main{
+    margin-left:0;
+    padding:20px 15px calc(92px + env(safe-area-inset-bottom,0px));
+  }
+  .page-head h1{font-size:23px}
   .cards.c2,.cards.c3,.cards.c4{grid-template-columns:1fr}
+  .cards.c4{grid-template-columns:repeat(2,1fr)}
+  .flash{padding:22px 16px;min-height:200px}
   .flash .word{font-size:34px}
+  .toast{bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+  .stat .num{font-size:29px}
+  table{font-size:13.5px}
+  th,td{padding:9px 10px}
+  .btn{padding:11px 15px}
 }
