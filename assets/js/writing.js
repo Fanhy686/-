@@ -5,15 +5,56 @@
   let topicIdx = 0;
   let scored = false;
 
-  /* ---------- 模板板块 ---------- */
-  function renderTpl() {
-    document.getElementById('structCards').innerHTML = (D.structure || []).map(s => `
-      <div class="card"><div class="c-ico">📐</div><div class="c-title">${s.part}</div>
-      <p class="c-desc">${s.tip}</p><div class="note" style="margin:0">${s.sample}</div></div>`).join('');
+  /* ---------- 模板板块：列表（只显示标题）→ 子界面 ---------- */
+  function openDetail(title, ico, html) {
+    document.getElementById('tabTpl').style.display = 'none';
+    const box = document.getElementById('tplDetail');
+    box.style.display = 'block';
+    box.innerHTML = `
+      <div class="sub-bar">
+        <button class="btn sm ghost" id="tplBack">↩️ 返回模板列表</button>
+        <span class="spacer"></span><span class="pill">${ico} ${title}</span>
+      </div>
+      <div class="card">${html}</div>`;
+    document.getElementById('tplBack').onclick = closeDetail;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  function closeDetail() {
+    const box = document.getElementById('tplDetail');
+    box.style.display = 'none';
+    box.innerHTML = '';
+    document.getElementById('tabTpl').style.display = 'block';
+  }
 
-    document.getElementById('sentCards').innerHTML = (D.sentences || []).map(g => `
-      <div class="card"><div class="c-ico">💬</div><div class="c-title">${g.label}</div>
-      <div style="margin-top:6px">${g.items.map(t => `<div style="padding:5px 0;border-bottom:1px dashed var(--line)">${t}</div>`).join('')}</div></div>`).join('');
+  function renderTpl() {
+    document.getElementById('structCards').innerHTML = (D.structure || []).map((s, i) => `
+      <div class="card link" data-s="${i}">
+        <div class="row"><span class="c-ico">📐</span><div style="flex:1;min-width:0">
+          <div class="c-title" style="margin:0">${s.part}</div>
+          <div class="c-desc">点击看写法 + 示例</div>
+        </div></div>
+      </div>`).join('');
+    document.querySelectorAll('#structCards .card').forEach(c => c.onclick = () => {
+      const s = D.structure[+c.dataset.s];
+      openDetail(s.part, '📐', `
+        <div class="row"><span class="c-ico">📐</span><strong>${s.part}</strong></div>
+        <p class="c-desc" style="margin-top:10px">${s.tip}</p>
+        <div class="note">${s.sample}</div>`);
+    });
+
+    document.getElementById('sentCards').innerHTML = (D.sentences || []).map((g, i) => `
+      <div class="card link" data-g="${i}">
+        <div class="row"><span class="c-ico">💬</span><div style="flex:1;min-width:0">
+          <div class="c-title" style="margin:0">${g.label}</div>
+          <div class="c-desc">${g.items.length} 句 · 点击展开</div>
+        </div></div>
+      </div>`).join('');
+    document.querySelectorAll('#sentCards .card').forEach(c => c.onclick = () => {
+      const g = D.sentences[+c.dataset.g];
+      openDetail(g.label, '💬', `
+        <div class="row"><span class="c-ico">💬</span><strong>${g.label}</strong></div>
+        <div style="margin-top:8px">${g.items.map(t => `<div style="padding:6px 0;border-bottom:1px dashed var(--line)">${t}</div>`).join('')}</div>`);
+    });
 
     document.getElementById('linkCard').innerHTML = (D.linking || []).map(w => `<span class="tag">${w}</span>`).join('');
 
@@ -110,11 +151,13 @@
     const tplBtn = document.getElementById('tabTplBtn');
     const pracBtn = document.getElementById('tabPracBtn');
     function showTpl() {
+      closeDetail();
       document.getElementById('tabTpl').style.display = 'block';
       document.getElementById('tabPrac').style.display = 'none';
       tplBtn.className = 'btn'; pracBtn.className = 'btn ghost';
     }
     function showPrac() {
+      closeDetail();
       document.getElementById('tabTpl').style.display = 'none';
       document.getElementById('tabPrac').style.display = 'block';
       pracBtn.className = 'btn'; tplBtn.className = 'btn ghost';
