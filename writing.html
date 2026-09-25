@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=5">
+<link rel="stylesheet" href="assets/css/styles.css?v=6">
 </head>
 <body data-page="writing">
 <aside id="sidebar"></aside>
@@ -25,10 +25,10 @@
 
   <!-- ===== 板块一：模板与素材 ===== -->
   <section id="tabTpl">
-    <h2 class="section-title"><span class="ico">🧱</span>三段式模板</h2>
+    <h2 class="section-title"><span class="ico">🧱</span>三段式模板（点标题看内容）</h2>
     <div class="cards" id="structCards"></div>
 
-    <h2 class="section-title"><span class="ico">💬</span>万能句型库</h2>
+    <h2 class="section-title"><span class="ico">💬</span>万能句型库（点标题看句型）</h2>
     <div class="cards c2" id="sentCards"></div>
 
     <h2 class="section-title"><span class="ico">🔗</span>衔接词（背这些就够）</h2>
@@ -37,6 +37,8 @@
     <h2 class="section-title"><span class="ico">📐</span>评分标准（满分 15）</h2>
     <div class="cards c2" id="critCards"></div>
   </section>
+
+  <div id="tplDetail" style="display:none"></div>
 
   <!-- ===== 板块二：练习区 ===== -->
   <section id="tabPrac" style="display:none">
@@ -73,5 +75,6 @@
 <script src="assets/js/writing-data.js"></script>
 <script src="assets/js/scorer.js"></script>
 <script src="assets/js/writing.js"></script>
+<script src="assets/js/dictball.js"></script>
 </body>
 </html>
