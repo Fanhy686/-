@@ -2,7 +2,11 @@
 (function () {
   const CET4 = [].concat(window.VOCAB || [], window.VOCAB4B || []).map(w => Object.assign({}, w, { lv: 4 }));
   const CET6 = [].concat(window.VOCAB6A || [], window.VOCAB6B || [], window.VOCAB6C || []).map(w => Object.assign({}, w, { lv: 6 }));
-  const ALL = CET4.concat(CET6);
+  const EXT = [].concat(
+    window.VOCABX1 || [], window.VOCABX2 || [], window.VOCABX3 || [], window.VOCABX4 || [],
+    window.VOCABX5 || [], window.VOCABX6 || [], window.VOCABX7 || [], window.VOCABX8 || [], window.VOCABX9 || []
+  ).map(w => Object.assign({}, w, { lv: 'x' }));
+  const ALL = CET4.concat(CET6).concat(EXT);
 
   let level = Store.get('vocabLevel', 'all');
   let LIST = ALL;
@@ -15,7 +19,7 @@
   function setLevel(lv) {
     level = lv;
     Store.set('vocabLevel', lv);
-    LIST = lv === '4' ? CET4 : (lv === '6' ? CET6 : ALL);
+    LIST = lv === '4' ? CET4 : (lv === '6' ? CET6 : (lv === 'x' ? EXT : ALL));
     order = LIST.map((_, i) => i);
     idx = 0; flipped = false;
     document.querySelectorAll('[data-lv]').forEach(b => {
@@ -33,8 +37,9 @@
     document.getElementById('vTotal').textContent = LIST.length;
     document.getElementById('vMastered').textContent = masteredHere;
     document.getElementById('vRemain').textContent = LIST.length - masteredHere;
+    const lvName = level === '4' ? '四级' : level === '6' ? '六级' : level === 'x' ? '进阶' : '全部';
     document.getElementById('libInfo').textContent =
-      `全库 ${ALL.length} 词（四级 ${CET4.length} · 六级 ${CET6.length}）｜ 当前：${level === '4' ? '四级' : level === '6' ? '六级' : '全部'}`;
+      `全库 ${ALL.length} 词（四级 ${CET4.length} · 六级 ${CET6.length} · 进阶 ${EXT.length}）｜ 当前：${lvName}`;
 
     const p = pool();
     if (p.length === 0) {
@@ -52,8 +57,8 @@
     document.getElementById('fWord').textContent = item.w;
     document.getElementById('fPh').textContent = item.ph;
     document.getElementById('fPos').textContent = item.pos;
-    document.getElementById('fLv').textContent = item.lv === 6 ? 'CET-6' : 'CET-4';
-    document.getElementById('fLv').className = 'tag' + (item.lv === 6 ? ' lv6' : '');
+    document.getElementById('fLv').textContent = item.lv === 6 ? 'CET-6' : (item.lv === 'x' ? '进阶' : 'CET-4');
+    document.getElementById('fLv').className = 'tag' + (item.lv === 6 ? ' lv6' : (item.lv === 'x' ? ' lvx' : ''));
     const cn = document.getElementById('fCn');
     const ex = document.getElementById('fEx');
     if (flipped) {
