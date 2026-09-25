@@ -1,7 +1,7 @@
 /* 词汇本闪卡逻辑（四级 + 六级，支持分级切换） */
 (function () {
-  const CET4 = (window.VOCAB || []).map(w => Object.assign({}, w, { lv: 4 }));
-  const CET6 = [].concat(window.VOCAB6A || [], window.VOCAB6B || []).map(w => Object.assign({}, w, { lv: 6 }));
+  const CET4 = [].concat(window.VOCAB || [], window.VOCAB4B || []).map(w => Object.assign({}, w, { lv: 4 }));
+  const CET6 = [].concat(window.VOCAB6A || [], window.VOCAB6B || [], window.VOCAB6C || []).map(w => Object.assign({}, w, { lv: 6 }));
   const ALL = CET4.concat(CET6);
 
   let level = Store.get('vocabLevel', 'all');
