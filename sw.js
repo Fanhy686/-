@@ -1,5 +1,5 @@
 /* 四级备考工作台 · Service Worker（离线可开 + 添加到主屏幕） */
-const CACHE = 'cet4-v1';
+const CACHE = 'cet4-v2';
 const ASSETS = [
   './', 'index.html', 'vocab.html', 'listening.html', 'reading.html',
   'writing.html', 'translation.html', 'quiz.html', 'checkin.html',
