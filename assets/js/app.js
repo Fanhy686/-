@@ -6,7 +6,6 @@ const NAV = [
   { page: 'reading',     href: 'reading.html',     ico: '📖', label: '阅读' },
   { page: 'writing',     href: 'writing.html',     ico: '✍️', label: '写作' },
   { page: 'translation', href: 'translation.html', ico: '🌐', label: '翻译' },
-  { page: 'quiz',        href: 'quiz.html',        ico: '🃏', label: '自测' },
   { page: 'checkin',     href: 'checkin.html',     ico: '✅', label: '打卡' },
 ];
 
