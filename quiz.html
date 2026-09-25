@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f2a44">
+<title>自测 · 四级备考工作台</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="quiz">
+<aside id="sidebar"></aside>
+<main>
+  <div class="page-head">
+    <h1>🃏 自测 · 互考</h1>
+    <p class="sub">词汇 / 语法小题库，逐题即时反馈。也可让我用 grill-me 当面拷问你。</p>
+  </div>
+
+  <div class="cards c3" style="margin-bottom:16px">
+    <div class="card"><div class="row"><span class="c-ico">📋</span><div class="stat"><div class="num" id="qTotal">0</div><div class="lab">总题数</div></div></div></div>
+    <div class="card"><div class="row"><span class="c-ico">✅</span><div class="stat"><div class="num accent" id="qBest">0</div><div class="lab">历史最佳</div></div></div></div>
+    <div class="card"><div class="row"><span class="c-ico">📍</span><div class="stat"><div class="num" id="qNow">0</div><div class="lab">当前进度</div></div></div></div>
+  </div>
+
+  <div class="row" style="margin-bottom:12px">
+    <button class="btn sm ghost" id="shuffleBtn">🔀 打乱顺序</button>
+    <button class="btn sm ghost" id="restartBtn">🔁 重新开始</button>
+  </div>
+
+  <div id="quizBox"></div>
+
+  <div class="note" style="margin-top:14px">💡 想让助手当面考你？直接说「用 grill-me 考我定语从句」或「grill me on 虚拟语气」，我会一题一题追问、即时纠错。</div>
+</main>
+
+<script src="assets/js/store.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/quiz-data.js"></script>
+<script src="assets/js/quiz.js"></script>
+</body>
+</html>
