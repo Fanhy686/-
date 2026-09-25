@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="stylesheet" href="assets/css/styles.css?v=4">
 </head>
 <body data-page="index">
 <aside id="sidebar"></aside>
@@ -57,6 +57,8 @@
 <script src="assets/js/store.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/vocab-data.js"></script>
+<script src="assets/js/vocab-data-cet6a.js"></script>
+<script src="assets/js/vocab-data-cet6b.js"></script>
 <script>
   const MODULES = [
     { key:'vocab', href:'vocab.html', ico:'📚', title:'词汇本', desc:'四级高频核心词闪卡，标记已掌握' },
@@ -71,7 +73,7 @@
 
   function buildProgress() {
     const mastered = (Store.get('vocabMastered', []) || []).length;
-    const total = (window.VOCAB || []).length || 1;
+    const total = ((window.VOCAB || []).length + (window.VOCAB6A || []).length + (window.VOCAB6B || []).length) || 1;
     const quizBest = Store.get('quizBest', 0);
     const checkinDates = Store.get('checkinDates', []) || [];
     const readingDone = (Store.get('readingDone', []) || []).length;
@@ -81,8 +83,8 @@
 
     const rows = [
       { ico:'📚', name:'词汇本', cur:mastered, max:total, unit:'词' },
-      { ico:'🎧', name:'听力', cur:listeningDone, max:3, unit:'篇' },
-      { ico:'📖', name:'阅读', cur:readingDone, max:3, unit:'篇' },
+      { ico:'🎧', name:'听力', cur:listeningDone, max:2, unit:'篇' },
+      { ico:'📖', name:'阅读', cur:readingDone, max:2, unit:'篇' },
       { ico:'✍️', name:'写作', cur:writingCount, max:null, unit:'篇' },
       { ico:'🌐', name:'翻译', cur:transDone, max:5, unit:'段' },
       { ico:'🃏', name:'自测', cur:quizBest, max:null, unit:'最佳分' },
