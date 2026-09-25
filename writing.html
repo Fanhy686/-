@@ -8,51 +8,70 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=3">
+<link rel="stylesheet" href="assets/css/styles.css?v=4">
 </head>
 <body data-page="writing">
 <aside id="sidebar"></aside>
 <main>
   <div class="page-head">
     <h1>✍️ 写作</h1>
-    <p class="sub">三段式模板、万能句型、衔接词、评分标准与真实范文，加上一个可自查的练习区。</p>
+    <p class="sub">分成两块：🧱 模板与素材（看）／ ✏️ 练习区（写 → 估分 → 看范文）。</p>
   </div>
 
-  <h2 class="section-title"><span class="ico">🧱</span>三段式模板</h2>
-  <div class="cards" id="structCards"></div>
-
-  <h2 class="section-title"><span class="ico">💬</span>万能句型库</h2>
-  <div class="cards c2" id="sentCards"></div>
-
-  <h2 class="section-title"><span class="ico">🔗</span>衔接词（背这些就够）</h2>
-  <div class="card" id="linkCard"></div>
-
-  <h2 class="section-title"><span class="ico">📐</span>评分标准（满分 15）</h2>
-  <div class="cards c2" id="critCards"></div>
-
-  <h2 class="section-title"><span class="ico">📝</span>真实范文</h2>
-  <div class="cards" id="sampleCards"></div>
-
-  <h2 class="section-title"><span class="ico">✏️</span>练习区（实时字数 + 自查）</h2>
-  <div class="card">
-    <div class="note">💡 自查清单：① 是否三段式、约 120–180 词？② 每段有主题句吗？③ 用了 ≥3 个衔接词？④ 有无明显语法/拼写错误？</div>
-    <textarea id="draft" placeholder="在此粘贴或写下你的作文…"></textarea>
-    <div class="row" style="margin-top:12px">
-      <button class="btn sm" id="countBtn">🔢 统计字数</button>
-      <button class="btn sm ghost" id="saveBtn">💾 保存草稿</button>
-      <button class="btn sm ghost" id="clearBtn">🧹 清空</button>
-      <span class="spacer"></span>
-      <span class="muted" id="wcount">词数：0 ｜ 字符：0</span>
-    </div>
-    <div class="row" style="margin-top:10px">
-      <span class="pill" id="pCheck">未检查三段式</span>
-    </div>
+  <div class="row" style="margin-bottom:18px">
+    <button class="btn" id="tabTplBtn">🧱 模板与素材</button>
+    <button class="btn ghost" id="tabPracBtn">✏️ 练习区（写 + 估分）</button>
   </div>
+
+  <!-- ===== 板块一：模板与素材 ===== -->
+  <section id="tabTpl">
+    <h2 class="section-title"><span class="ico">🧱</span>三段式模板</h2>
+    <div class="cards" id="structCards"></div>
+
+    <h2 class="section-title"><span class="ico">💬</span>万能句型库</h2>
+    <div class="cards c2" id="sentCards"></div>
+
+    <h2 class="section-title"><span class="ico">🔗</span>衔接词（背这些就够）</h2>
+    <div class="card" id="linkCard"></div>
+
+    <h2 class="section-title"><span class="ico">📐</span>评分标准（满分 15）</h2>
+    <div class="cards c2" id="critCards"></div>
+  </section>
+
+  <!-- ===== 板块二：练习区 ===== -->
+  <section id="tabPrac" style="display:none">
+    <div class="note">📌 流程：① 选题目 → ② 在输入框里写（建议 120–180 词）→ ③ 点「🤖 AI 估分」看分项反馈 → ④ 点「📄 查看范文」对照。</div>
+
+    <div class="card">
+      <div class="row">
+        <span class="c-ico">🎯</span><strong>选择题目</strong>
+        <span class="spacer"></span>
+        <select id="topicSel" style="max-width:100%"></select>
+      </div>
+      <div id="topicBox" style="margin-top:10px"></div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <div class="row"><span class="c-ico">✏️</span><strong>你的作文</strong><span class="spacer"></span><span class="muted" id="wcount">0 词 ｜ 0 段</span></div>
+      <textarea id="draft" placeholder="在此写下你的作文（建议 120–180 词，三段式）…" style="margin-top:10px"></textarea>
+      <div class="row" style="margin-top:12px">
+        <button class="btn" id="scoreBtn">🤖 AI 估分</button>
+        <button class="btn sm ghost" id="sampleBtn" disabled>📄 查看范文</button>
+        <button class="btn sm ghost" id="saveBtn">💾 保存草稿</button>
+        <button class="btn sm ghost" id="clearBtn">🧹 清空</button>
+        <span class="spacer"></span>
+        <span class="pill" id="pCheck">未检查</span>
+      </div>
+      <div id="wrep"></div>
+      <div id="wsample" style="display:none;margin-top:14px"></div>
+    </div>
+  </section>
 </main>
 
 <script src="assets/js/store.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/writing-data.js"></script>
+<script src="assets/js/scorer.js"></script>
 <script src="assets/js/writing.js"></script>
 </body>
 </html>
