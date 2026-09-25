@@ -1,0 +1,27 @@
+/* 自测题库（词汇 + 语法，共 24 题，原创） */
+window.QUIZ = [
+  { type:"词汇", q:"单词 abandon 的意思是？", opts:["抛弃；放弃","获得；习得","适应；改编","忽视；不理"], ans:0, exp:"abandon = 抛弃、放弃，如 abandon the plan（放弃计划）。" },
+  { type:"词汇", q:"adequate 的意思是？", opts:["足够的；适当的","短暂的","复杂的","明显的"], ans:0, exp:"adequate = 足够的、适当的，如 adequate food（足够的食物）。" },
+  { type:"词汇", q:"benefit 的意思是？", opts:["利益；受益","负担","障碍","冒险"], ans:0, exp:"benefit 作名词“利益”、作动词“受益”，如 benefit your health。" },
+  { type:"词汇", q:"conduct 作为动词意思是？", opts:["进行；引导","消耗","包含","批评"], ans:0, exp:"conduct = 进行、引导、行为，如 conduct a survey（进行调查）。" },
+  { type:"词汇", q:"eliminate 的意思是？", opts:["消除；淘汰","拥抱","强调","雇佣"], ans:0, exp:"eliminate = 消除、淘汰，如 eliminate poverty（消除贫困）。" },
+  { type:"词汇", q:"former 的意思是？", opts:["前者的；以前的","后者的","外部的","频繁的"], ans:0, exp:"former 指“前者的、以前的”，与 latter（后者的）相对。" },
+  { type:"词汇", q:"generate 的意思是？", opts:["产生；生成","保护","拒绝","推断"], ans:0, exp:"generate = 产生、生成，如 generate electricity（发电）。" },
+  { type:"词汇", q:"obtain 的意思是？", opts:["获得","占据","发生","忽视"], ans:0, exp:"obtain = 获得、得到，如 obtain a license（获得执照）。" },
+  { type:"语法", q:"By the time we arrived, the train ___.", opts:["left","had left","leaves","leaving"], ans:1, exp:"“到我们到达时”用过去完成时 had left，表示“离开”发生在 arrived 之前。" },
+  { type:"语法", q:"The book ___ on the desk is mine.", opts:["lying","lay","laid","lain"], ans:0, exp:"书“平躺”在桌上用现在分词 lying（lie 的现在分词），作后置定语。" },
+  { type:"语法", q:"If I ___ you, I would take the job.", opts:["am","were","been","be"], ans:1, exp:"虚拟语气中，与现在事实相反的条件句 be 动词用 were。" },
+  { type:"语法", q:"He suggested ___ early.", opts:["to leave","leaving","leave","left"], ans:1, exp:"suggest 后接动名词，用 leaving（建议早点出发）。" },
+  { type:"语法", q:"___ hard he tried, he failed.", opts:["However","Whatever","Although","Even"], ans:0, exp:"However + 形容词/副词，意为“无论多…”，However hard = 无论多努力。" },
+  { type:"语法", q:"The window is broken; it needs ___.", opts:["repair","to repair","repairing","be repaired"], ans:2, exp:"need 后接动名词主动表被动，用 repairing（需要修理）。" },
+  { type:"语法", q:"She is the girl ___ won the prize.", opts:["which","who","whom","whose"], ans:1, exp:"先行词 girl 指人且作主语，用 who 引导定语从句。" },
+  { type:"语法", q:"I'm looking forward to ___ you.", opts:["see","seen","seeing","saw"], ans:2, exp:"look forward to 中 to 是介词，后接动名词 seeing。" },
+  { type:"语法", q:"Not only ___ but he also helped us.", opts:["he came","he did come","came he","did he come"], ans:3, exp:"not only 置于句首引起部分倒装，用 did he come。" },
+  { type:"语法", q:"The teacher made the students ___ the text.", opts:["recite","reciting","to recite","recited"], ans:0, exp:"make sb. do sth.（使某人做某事），用动词原形 recite。" },
+  { type:"语法", q:"It was not until midnight ___ he finished.", opts:["when","that","which","than"], ans:1, exp:"强调句结构 It was... that...，被强调部分 not until midnight。" },
+  { type:"语法", q:"___ from the hill, the village looks beautiful.", opts:["Seeing","Seen","To see","See"], ans:1, exp:"village 被看，用过去分词 Seen 作状语（= When it is seen）。" },
+  { type:"语法", q:"He has lived here ___ 2010.", opts:["for","since","in","from"], ans:1, exp:"现在完成时接时间点用 since（自从 2010 年起）。" },
+  { type:"语法", q:"The more you read, ___ you understand.", opts:["the better","the good","better","the best"], ans:0, exp:"“the + 比较级 …, the + 比较级 …”结构，用 the better。" },
+  { type:"语法", q:"My phone is different ___ yours.", opts:["with","from","than","to"], ans:1, exp:"be different from 为固定搭配，意为“与…不同”。" },
+  { type:"语法", q:"___ the weather, the sports meet was held on time.", opts:["In spite","Despite","Although","Even"], ans:1, exp:"Despite 是介词，后接名词 the weather（尽管天气…）；Although 后须接句子。" }
+];
