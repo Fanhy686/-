@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f2a44">
+<title>写作 · 四级备考工作台</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="writing">
+<aside id="sidebar"></aside>
+<main>
+  <div class="page-head">
+    <h1>✍️ 写作</h1>
+    <p class="sub">三段式模板、万能句型、衔接词、评分标准与真实范文，加上一个可自查的练习区。</p>
+  </div>
+
+  <h2 class="section-title"><span class="ico">🧱</span>三段式模板</h2>
+  <div class="cards" id="structCards"></div>
+
+  <h2 class="section-title"><span class="ico">💬</span>万能句型库</h2>
+  <div class="cards c2" id="sentCards"></div>
+
+  <h2 class="section-title"><span class="ico">🔗</span>衔接词（背这些就够）</h2>
+  <div class="card" id="linkCard"></div>
+
+  <h2 class="section-title"><span class="ico">📐</span>评分标准（满分 15）</h2>
+  <div class="cards c2" id="critCards"></div>
+
+  <h2 class="section-title"><span class="ico">📝</span>真实范文</h2>
+  <div class="cards" id="sampleCards"></div>
+
+  <h2 class="section-title"><span class="ico">✏️</span>练习区（实时字数 + 自查）</h2>
+  <div class="card">
+    <div class="note">💡 自查清单：① 是否三段式、约 120–180 词？② 每段有主题句吗？③ 用了 ≥3 个衔接词？④ 有无明显语法/拼写错误？</div>
+    <textarea id="draft" placeholder="在此粘贴或写下你的作文…"></textarea>
+    <div class="row" style="margin-top:12px">
+      <button class="btn sm" id="countBtn">🔢 统计字数</button>
+      <button class="btn sm ghost" id="saveBtn">💾 保存草稿</button>
+      <button class="btn sm ghost" id="clearBtn">🧹 清空</button>
+      <span class="spacer"></span>
+      <span class="muted" id="wcount">词数：0 ｜ 字符：0</span>
+    </div>
+    <div class="row" style="margin-top:10px">
+      <span class="pill" id="pCheck">未检查三段式</span>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/store.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/writing-data.js"></script>
+<script src="assets/js/writing.js"></script>
+</body>
+</html>
