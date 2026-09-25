@@ -1,18 +1,19 @@
 /* 四级备考工作台 · Service Worker（离线可开 + 添加到主屏幕）
    策略：网络优先（在线永远拿最新内容），断网时回退缓存。 */
-const CACHE = 'cet4-v4';
+const CACHE = 'cet4-v5';
 const ASSETS = [
   './', 'index.html', 'vocab.html', 'listening.html', 'reading.html',
-  'writing.html', 'translation.html', 'quiz.html', 'checkin.html',
+  'writing.html', 'translation.html', 'checkin.html',
   'manifest.webmanifest', 'icon.svg',
   'assets/css/styles.css',
   'assets/js/store.js', 'assets/js/app.js', 'assets/js/scorer.js',
-  'assets/js/vocab-data.js', 'assets/js/vocab-data-cet6a.js', 'assets/js/vocab-data-cet6b.js', 'assets/js/vocab.js',
+  'assets/js/vocab-data.js', 'assets/js/vocab-data-cet4b.js',
+  'assets/js/vocab-data-cet6a.js', 'assets/js/vocab-data-cet6b.js', 'assets/js/vocab-data-cet6c.js',
+  'assets/js/vocab.js',
   'assets/js/listening-data.js', 'assets/js/listening.js',
-  'assets/js/reading-data.js', 'assets/js/reading.js',
+  'assets/js/reading-data.js', 'assets/js/reading-extra.js', 'assets/js/reading-daily.js', 'assets/js/reading.js',
   'assets/js/writing-data.js', 'assets/js/writing.js',
   'assets/js/translation-data.js', 'assets/js/translation.js',
-  'assets/js/quiz-data.js', 'assets/js/quiz.js',
   'assets/js/checkin.js'
 ];
 
