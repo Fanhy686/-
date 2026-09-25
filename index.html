@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=5">
+<link rel="stylesheet" href="assets/css/styles.css?v=6">
 </head>
 <body data-page="index">
 <aside id="sidebar"></aside>
@@ -56,11 +56,7 @@
 
 <script src="assets/js/store.js"></script>
 <script src="assets/js/app.js"></script>
-<script src="assets/js/vocab-data.js"></script>
-<script src="assets/js/vocab-data-cet4b.js"></script>
-<script src="assets/js/vocab-data-cet6a.js"></script>
-<script src="assets/js/vocab-data-cet6b.js"></script>
-<script src="assets/js/vocab-data-cet6c.js"></script>
+<script src="assets/js/vocab-meta.js"></script>
 <script src="assets/js/reading-data.js"></script>
 <script src="assets/js/reading-extra.js"></script>
 <script src="assets/js/reading-daily.js"></script>
@@ -77,8 +73,7 @@
 
   function buildProgress() {
     const mastered = (Store.get('vocabMastered', []) || []).length;
-    const total = ((window.VOCAB || []).length + (window.VOCAB4B || []).length +
-      (window.VOCAB6A || []).length + (window.VOCAB6B || []).length + (window.VOCAB6C || []).length) || 1;
+    const total = (window.VOCAB_META && window.VOCAB_META.total) || 1;
     const readTotal = ((window.READING || []).length + (window.READING_EXTRA || []).length +
       ((window.READING_DAILY && window.READING_DAILY.passages) || []).length) || 1;
     const checkinDates = Store.get('checkinDates', []) || [];
@@ -120,5 +115,6 @@
     buildEntries();
   });
 </script>
+<script src="assets/js/dictball.js"></script>
 </body>
 </html>
