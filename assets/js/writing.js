@@ -55,31 +55,7 @@
     else p.textContent = `⚠️ 词数 ${words}（建议 120–180），段落 ${paras}`;
   }
 
-  function reportHTML(r) {
-    return `<div class="card" style="margin-top:14px;border-color:var(--accent)">
-      <div class="row" style="align-items:flex-start">
-        <span class="c-ico">🤖</span>
-        <div style="flex:1">
-          <div class="row"><strong style="font-size:17px">估分 ${r.score} / 15</strong>
-            <span class="pill">${r.band}</span>
-            <span class="tag">≈ 报告分 ${r.report}</span></div>
-          <div class="muted" style="font-size:13px;margin-top:4px">${r.myWords} 词 ｜ ${r.paras} 段</div>
-        </div>
-      </div>
-      <div style="margin-top:12px">
-        ${r.items.map(it => `
-          <div style="margin-bottom:8px">
-            <div class="row" style="justify-content:space-between;font-size:13.5px">
-              <span>${it.label}</span><span class="muted">${Math.round(it.rate * 100)}%</span>
-            </div>
-            <div class="bar" style="height:8px;margin-top:3px"><i style="width:${Math.round(it.rate * 100)}%"></i></div>
-            <div class="muted" style="font-size:12.5px;margin-top:2px">${it.text}</div>
-          </div>`).join('')}
-      </div>
-      ${r.tips && r.tips.length ? `<div class="note" style="margin-top:10px">💡 改进建议：${r.tips.map(t => `<div>· ${t}</div>`).join('')}</div>` : ''}
-      <div class="muted" style="font-size:12px;margin-top:8px">${r.note}</div>
-    </div>`;
-  }
+  function reportHTML(r) { return window.Scorer.reportHTML(r); }
 
   document.addEventListener('DOMContentLoaded', () => {
     renderTpl();
