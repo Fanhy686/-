@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=5">
+<link rel="stylesheet" href="assets/css/styles.css?v=6">
 </head>
 <body data-page="translation">
 <aside id="sidebar"></aside>
@@ -20,7 +20,11 @@
 
   <div class="note">📌 打法：① 通读中文、划出「文化专有词」（如年夜饭/红包）→ ② 在输入框里自己译成英文 → ③ 点「🤖 AI 估分」看覆盖度、漏译词与不足清单 → ④ 点开参考答案对照，背下「重点表达」。四级翻译要求 140–180 字段落、译完全文不增不减。</div>
 
-  <div class="cards" id="transCards"></div>
+  <section id="listSec">
+    <h2 class="section-title"><span class="ico">📁</span>翻译素材（点标题进入练习）</h2>
+    <div class="cards" id="transCards"></div>
+  </section>
+  <div id="detail"></div>
 </main>
 
 <script src="assets/js/store.js"></script>
@@ -28,5 +32,6 @@
 <script src="assets/js/translation-data.js"></script>
 <script src="assets/js/scorer.js"></script>
 <script src="assets/js/translation.js"></script>
+<script src="assets/js/dictball.js"></script>
 </body>
 </html>
