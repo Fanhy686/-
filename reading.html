@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=4">
+<link rel="stylesheet" href="assets/css/styles.css?v=5">
 </head>
 <body data-page="reading">
 <aside id="sidebar"></aside>
@@ -20,6 +20,8 @@
 
   <div class="note">📌 打法：① 先读题干、圈关键词 → ② 回原文定位（答案常在关键词的同义替换附近）→ ③ 排除干扰项（无中生有 / 张冠李戴 / 以偏概全）→ ④ 对答案看解析。每篇控制在 8–10 分钟。</div>
 
+  <div class="card" id="dailyBar" style="border-color:var(--accent);margin-bottom:16px"></div>
+
   <h2 class="section-title"><span class="ico">📁</span>阅读练习</h2>
   <div class="cards c3" id="matCards"></div>
   <div id="detail"></div>
@@ -28,6 +30,8 @@
 <script src="assets/js/store.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/reading-data.js"></script>
+<script src="assets/js/reading-extra.js"></script>
+<script src="assets/js/reading-daily.js"></script>
 <script src="assets/js/reading.js"></script>
 </body>
 </html>
