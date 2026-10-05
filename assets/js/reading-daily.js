@@ -1,6 +1,6 @@
 /* 每日阅读更新（自动生成，每天追加 2–3 篇仔细阅读） */
 window.READING_DAILY = {
-  updated: "2026-09-26",
+  updated: "2026-10-05",
   passages: [
     {
         "type": "仔细阅读 · Careful Reading",
@@ -413,6 +413,213 @@ window.READING_DAILY = {
                 ],
                 "ans": 2,
                 "exp": "末段建议购物者学会区分 best before 与 use by，第二段也批评人们不闻一下就丢掉牛奶，说明应根据食物实际状况判断。A、B、D 均属极端或无依据的引申。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-05",
+        "title": "主题：城市噪音污染对人体健康的影响",
+        "intro": "先读题干圈出关键词（children、reduce、public health），再回原文定位对应段落。",
+        "passage": "When people talk about pollution, they usually think of dirty air or polluted rivers. Noise, however, is a form of pollution that is easy to ignore. It cannot be seen or smelled, yet it affects millions of city residents every day. Traffic, construction sites, loud neighbours and late-night delivery vehicles all add to the noise of modern urban life. In many large cities, the average sound level at night remains far above the level that health experts consider safe.\nLong-term exposure to noise does more than annoy people. Studies have shown that it can raise blood pressure, disturb sleep and increase the risk of heart disease. Children are especially vulnerable. Those who live near busy roads or airports often have more trouble concentrating in class and tend to score lower on reading tests. Even when students appear to get used to the noise, their bodies still react to it, which means that simply feeling fine does not prove that the noise is harmless.\nDealing with noise is not simple, because cities need traffic, building work and night-time services. Still, many places have found practical solutions. Planting trees along roads, building sound barriers and requiring trucks to use quieter tyres can all reduce the noise that reaches homes. Some cities have also set strict limits on construction at night and encourage hospitals and schools to be built away from main roads. These measures are not free, but they are usually cheaper than treating the illnesses caused by years of noise.\nIndividuals can protect themselves too. Closing windows at night, using thick curtains, or moving the bedroom to the quiet side of the flat can make a real difference. More importantly, citizens can report serious noise problems instead of suffering in silence. Noise pollution is not a personal weakness that people should learn to tolerate. It is a public health problem, and like other public health problems, it deserves serious attention from both governments and the public.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the passage mainly about?",
+                "opts": [
+                    "A. The main causes of air pollution in big cities",
+                    "B. Noise pollution as a health problem and how to deal with it",
+                    "C. Why city residents should move to the countryside",
+                    "D. The relationship between traffic and city development"
+                ],
+                "ans": 1,
+                "exp": "全文先说明噪音是一种被忽视的污染，接着讲它对健康的危害，最后给出城市和个人的应对办法，因此 B 概括最全面。A 只谈空气污染，原文仅在第一段作为对比提到；C 的搬到乡下原文未提；D 把重点误放在交通与城市发展上，并非文章主旨。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to the passage, children living near busy roads or airports often ______.",
+                "opts": [
+                    "A. show a stronger interest in traffic safety",
+                    "B. suffer immediate and serious hearing loss",
+                    "C. have trouble concentrating in class",
+                    "D. choose to study in noisy places on purpose"
+                ],
+                "ans": 2,
+                "exp": "第二段明确说这些孩子 often have more trouble concentrating in class，并且阅读测试分数偏低，故选 C。A 的兴趣和 D 的主动选择原文都没有依据；B 把长期影响夸大成严重的听力损伤，属于过度推断。"
+            },
+            {
+                "kind": "choice",
+                "q": "Which of the following is NOT mentioned as a way to reduce city noise?",
+                "opts": [
+                    "A. Planting trees along roads",
+                    "B. Building sound barriers",
+                    "C. Using quieter tyres on trucks",
+                    "D. Closing all airports at night"
+                ],
+                "ans": 3,
+                "exp": "第三段列举的降噪措施包括路边种树、修建隔音屏障、卡车使用更安静的轮胎以及限制夜间施工，A、B、C 均在内。D 的夜间关闭所有机场原文从未出现，是凭常识编造的干扰项。"
+            },
+            {
+                "kind": "choice",
+                "q": "By saying that feeling fine does not prove the noise is harmless, the author means that ______.",
+                "opts": [
+                    "A. people can be harmed by noise without noticing it",
+                    "B. people who feel fine never need medical care",
+                    "C. noise becomes harmless once people accept it",
+                    "D. doctors cannot measure the effects of noise"
+                ],
+                "ans": 0,
+                "exp": "该句前一句说即使学生似乎习惯了噪音，身体依然会作出反应，说明伤害可能在无察觉的情况下发生，故选 A。B、C 与原文意思相反；D 说医生无法测量，原文并未提及，属于无中生有。"
+            },
+            {
+                "kind": "choice",
+                "q": "The author's attitude towards noise pollution is that ______.",
+                "opts": [
+                    "A. it is a personal weakness people should learn to tolerate",
+                    "B. it is a public health problem that should be taken seriously",
+                    "C. it is less important than air pollution and water pollution",
+                    "D. it will disappear as cities become cleaner"
+                ],
+                "ans": 1,
+                "exp": "最后一段明确指出噪音污染不是个人应当忍受的弱点，而是值得政府和公众重视的公共卫生问题，故选 B。A 与原文直接相反；C 的轻重比较原文未作；D 的自动消失没有依据。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-05",
+        "title": "主题：城市周边短途旅行的流行",
+        "intro": "注意区分原文列举的原因、好处与问题，态度题要回到最后一段找作者的判断。",
+        "passage": "In the past, a holiday usually meant a long journey to a famous city or a foreign country. In recent years, however, a different kind of trip has become popular. Young people call it a micro-vacation: a short break of one or two days, usually spent in a small town or a park not far from home. Instead of rushing through a list of tourist attractions, travellers look for a quiet place to rest, take photos and enjoy local food. For them, the purpose of a trip is no longer to visit as many places as possible, but to slow down and return to work with fresh energy.\nSeveral reasons explain this change. Long holidays are limited, and popular destinations are often crowded and expensive during public holidays. A micro-vacation costs far less and requires little planning. With high-speed trains and better roads, many people can reach a nearby town in under two hours. Social media has also played a part. When users see attractive pictures of a small village or a camping site, they want to visit the same place at the weekend.\nThe trend has brought new opportunities to rural areas. Small hotels, farmhouses and local restaurants that once depended on a few summer months now receive visitors all year round. Some villages have organised fruit-picking events, night markets and short walking routes to keep tourists interested. For local young people, this means more jobs close to home rather than in distant cities. Visitors also buy local products directly from farmers, so more of the money stays in the village.\nOf course, the trend is not without problems. Sudden crowds can produce large amounts of rubbish and put pressure on water and power supplies. Local governments are therefore being asked to plan ahead, improve public transport and protect the natural environment that attracts visitors in the first place. If these problems are solved, micro-vacations may continue to grow, and may even change the way people think about rest itself.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "The passage is mainly about ______.",
+                "opts": [
+                    "A. why travelling abroad is better than local travel",
+                    "B. how to plan a cheap trip during public holidays",
+                    "C. the growing popularity of short local trips and their effects",
+                    "D. the environmental damage caused by modern tourism"
+                ],
+                "ans": 2,
+                "exp": "文章先介绍微度假的兴起与原因，再讲它给乡村带来的机会和引发的问题，C 涵盖了这两方面。A 的出国更好与原文趋势相反；B 只对应第二段的一个细节；D 只涉及最后一段的部分内容，都不能概括全篇。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to Paragraph 2, micro-vacations have become popular partly because ______.",
+                "opts": [
+                    "A. travellers now have more public holidays than before",
+                    "B. nearby destinations are cheaper and easy to reach",
+                    "C. hotels in big cities have become far too expensive",
+                    "D. foreign countries are harder to visit than in the past"
+                ],
+                "ans": 1,
+                "exp": "第二段指出长假有限、热门景点拥挤昂贵，而微度假花费少、两小时内即可到达，故选 B。A 与原文 Long holidays are limited 相矛盾；C 把对象误换成大城市酒店；D 的出国更难原文根本未提。"
+            },
+            {
+                "kind": "choice",
+                "q": "What benefit do micro-vacations bring to rural areas?",
+                "opts": [
+                    "A. They make public transport unnecessary in villages",
+                    "B. They allow villagers to stop farming completely",
+                    "C. They create jobs and income for much of the year",
+                    "D. They lower the price of food in local shops"
+                ],
+                "ans": 2,
+                "exp": "第三段说乡村小旅馆、农家乐和餐馆现在全年都有客流，当地年轻人也能在家门口就业，故选 C。A、B 的不再需要公交、完全停止耕作均过于绝对；D 的物价下降原文没有提到。"
+            },
+            {
+                "kind": "choice",
+                "q": "In the last paragraph, the author implies that micro-vacations ______.",
+                "opts": [
+                    "A. may keep growing if the related problems are handled",
+                    "B. will soon replace long-distance travel completely",
+                    "C. have already caused serious water shortages everywhere",
+                    "D. are suitable only for young people with little money"
+                ],
+                "ans": 0,
+                "exp": "末段用 If these problems are solved, micro-vacations may continue to grow 表明作者认为处理得当就会继续发展，故选 A。B 的完全取代、C 的已经造成严重缺水都夸大了原文；D 的只适合年轻人属于无依据的限制。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the author suggest local governments should do?",
+                "opts": [
+                    "A. Limit the number of visitors to small villages",
+                    "B. Stop building new roads in rural areas",
+                    "C. Ask villages to close their night markets",
+                    "D. Plan ahead, improve transport and protect nature"
+                ],
+                "ans": 3,
+                "exp": "最后一段直接说地方政府被要求 plan ahead, improve public transport and protect the natural environment，与 D 完全一致。A 的限制人数、B 的停修公路、C 的关闭夜市原文均未提出，属于凭空编造。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-05",
+        "title": "主题：如何辨别网络上的不实信息",
+        "intro": "做细节题时回到第二段、第三段找原句，态度题注意作者在末段给出的建议语气。",
+        "passage": "Every day, huge amounts of information are shared on social media. Some of it is useful, but some is false or misleading. A short video may show an accident that happened years ago in another country, yet it is presented as breaking news. A message may warn readers about a food that is dangerous, although no scientific study supports the claim. For many people, it is becoming harder to tell facts from rumours. Unlike a printed newspaper, an online post can be created by anyone in a few seconds and then copied across many platforms before anybody checks it.\nWhy do people fall for false information? One reason is speed. News applications reward posts that attract attention, so shocking stories spread faster than careful reports. Another reason is that people tend to believe information that matches what they already think. Studies also show that many users share an article after reading only its headline. Once a story has been shared thousands of times, correcting it is extremely difficult, because the correction rarely reaches the same audience.\nFalse information is not just an online problem. It can lead to real harm. During natural disasters, wrong messages about rescue work may waste valuable time. In the field of health, incorrect advice about medicine or diet can put lives at risk. Even in daily life, a rumour about a local shop may destroy a small business that has done nothing wrong. Schools and libraries have therefore started short lessons on checking sources, because young readers meet such messages every day.\nFortunately, there are simple habits that help. Before sharing a story, readers should check who published it and whether other trusted news organisations have reported the same event. Looking at the date and the original source can prevent many mistakes. It is also wise to pause when a message makes you angry or frightened, because strong emotions are often used to push people into sharing. In the digital age, being careful is not a sign of distrust. It is a basic skill that every reader needs.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the passage mainly about?",
+                "opts": [
+                    "A. How social media companies make money from users",
+                    "B. Why false information spreads and how readers can judge it",
+                    "C. The development of news applications in recent years",
+                    "D. How to report accidents quickly on social media"
+                ],
+                "ans": 1,
+                "exp": "文章依次讲不实信息的表现、传播原因、现实危害以及读者的应对习惯，B 完整覆盖了原因与判断方法。A 的公司盈利、C 的应用发展、D 的事故上报都只是局部或无关内容，不能概括主旨。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to Paragraph 2, many users share an article after ______.",
+                "opts": [
+                    "A. checking it with a trusted news organisation",
+                    "B. discussing the story with their close friends",
+                    "C. comparing it with several other reports",
+                    "D. reading only its headline"
+                ],
+                "ans": 3,
+                "exp": "第二段明确说 many users share an article after reading only its headline，故选 D。A、C 是作者在末段建议的正确做法，被故意放到错误位置；B 的与朋友讨论原文未提及。"
+            },
+            {
+                "kind": "choice",
+                "q": "Which of the following is mentioned as possible real harm caused by false information?",
+                "opts": [
+                    "A. It may slow down rescue work during disasters",
+                    "B. It may make news applications unpopular",
+                    "C. It may stop people from using social media",
+                    "D. It may raise the price of medicine in hospitals"
+                ],
+                "ans": 0,
+                "exp": "第三段举例说自然灾害中关于救援的错误信息可能浪费宝贵时间，即耽误救援，故选 A。B、C 属于对平台和用户的影响，原文未提；D 的药价上涨是把 health 领域的危害曲解成价格问题。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why does the author advise readers to pause when a message makes them angry?",
+                "opts": [
+                    "A. Anger makes people read news more slowly",
+                    "B. Strong feelings are often used to make people share",
+                    "C. Angry readers usually report the news to the police",
+                    "D. The message is probably published by a close friend"
+                ],
+                "ans": 1,
+                "exp": "末段原句说明 strong emotions are often used to push people into sharing，所以要先停下来，故选 B。A 的阅读变慢、C 的报警、D 的朋友发布都没有原文依据，属于常识化干扰。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the author think of being careful with online information?",
+                "opts": [
+                    "A. It is a sign of distrust towards everyone around us",
+                    "B. It is unnecessary because most online news is true",
+                    "C. It is a basic skill that every reader needs",
+                    "D. It should be left to professional journalists alone"
+                ],
+                "ans": 2,
+                "exp": "文章结尾说 being careful is not a sign of distrust，而是 every reader needs 的基本技能，故选 C。A 与原文直接相反；B 说没必要与全文立场不符；D 说只交给专业记者，违背了作者倡导读者自查的建议。"
             }
         ]
     }
