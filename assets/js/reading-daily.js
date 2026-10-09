@@ -1,6 +1,6 @@
 /* 每日阅读更新（自动生成，每天追加 2–3 篇仔细阅读） */
 window.READING_DAILY = {
-  updated: "2026-10-05",
+  updated: "2026-10-09",
   passages: [
     {
         "type": "仔细阅读 · Careful Reading",
@@ -620,6 +620,420 @@ window.READING_DAILY = {
                 ],
                 "ans": 2,
                 "exp": "文章结尾说 being careful is not a sign of distrust，而是 every reader needs 的基本技能，故选 C。A 与原文直接相反；B 说没必要与全文立场不符；D 说只交给专业记者，违背了作者倡导读者自查的建议。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-09",
+        "title": "主题：大学生兼职的收获与代价",
+        "intro": "先读题干圈出关键词，再回原文定位段落，注意作者既讲好处也讲风险。",
+        "passage": "Part-time jobs have become common among college students in recent years. A survey by a research center found that more than sixty percent of students had worked for pay during the school year. Some take jobs to cover living costs, while others want to gain experience before graduation. Cafes, bookstores and training centers are popular choices because their working hours are flexible. Universities have also set up offices to help students find safe and suitable positions on or near campus.\nThe benefits are clear. Students who work part time often learn how to communicate with different kinds of people and how to manage their own schedules. They become more confident when dealing with problems, and they usually value money more than before. Employers, too, prefer graduates who have already worked in a real setting, since such students need less training. In a competitive job market, even a few months of experience can make a difference when a student sends out a resume.\nHowever, working while studying also involves risks. The most serious one is time. Students who spend long hours at a job may have little energy left for reading and reviewing. They may skip classes or hand in homework late, and their grades may slowly fall. Teachers often notice that some tired students sleep in class or fail to take part in group discussions. If the income is low, the trade is hardly worth it, because a poor academic record can hurt a student far longer than a short-term job helps.\nExperts therefore suggest a balanced approach. Students should limit their working hours to about ten a week and avoid taking extra shifts during examination periods. It is wiser to choose a job related to their major, so that work and study support each other. Schools can also help by offering more scholarships and campus positions. With careful planning, a part-time job can be a useful teacher rather than a heavy burden.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the passage mainly about?",
+                "opts": [
+                    "A. The reasons why university students need more money.",
+                    "B. The advantages and disadvantages of taking part-time jobs as a student.",
+                    "C. How universities can help students find better jobs after graduation.",
+                    "D. The differences between campus jobs and off-campus jobs."
+                ],
+                "ans": 1,
+                "exp": "文章先说明大学生兼职很普遍，第二段讲好处，第三段讲风险，最后一段给出平衡建议，整体是利弊兼顾的结构。A、C、D 都只对应文中某一处细节，无法概括全篇。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why are cafes and bookstores popular choices for students?",
+                "opts": [
+                    "A. They pay much better than other workplaces.",
+                    "B. They are usually located far away from the campus.",
+                    "C. Their working hours can be arranged more easily.",
+                    "D. They offer training for future full-time jobs."
+                ],
+                "ans": 2,
+                "exp": "第一段末尾明确说这些地方受欢迎是因为 their working hours are flexible，即工作时间灵活、便于安排。A 的工资更高、B 的离校很远、D 的职业培训在文中都没有依据。"
+            },
+            {
+                "kind": "choice",
+                "q": "What do employers think of graduates who have worked before?",
+                "opts": [
+                    "A. They are likely to ask for higher pay.",
+                    "B. They require less training after being hired.",
+                    "C. They often change jobs more frequently.",
+                    "D. They care less about academic performance."
+                ],
+                "ans": 1,
+                "exp": "第二段指出雇主更愿意聘用已经有过真实工作经历的毕业生，因为 such students need less training，即入职后所需培训更少。其余三项文中均未提及。"
+            },
+            {
+                "kind": "choice",
+                "q": "Which of the following is mentioned as a possible result of working too long?",
+                "opts": [
+                    "A. Students may lose interest in their major.",
+                    "B. Students may fail to hand in homework on time.",
+                    "C. Students may argue with their teachers.",
+                    "D. Students may spend money more quickly."
+                ],
+                "ans": 1,
+                "exp": "第三段列举了加班过多的后果：skip classes or hand in homework late，也就是迟交作业。A、C 文中未提；D 与文意相反，文中说做过兼职的学生通常更珍惜钱。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the author suggest students do about part-time jobs?",
+                "opts": [
+                    "A. Give them up until all the courses are finished.",
+                    "B. Work as many hours as possible to gain experience.",
+                    "C. Choose any job that offers the highest pay.",
+                    "D. Limit the hours and pick jobs linked to their major."
+                ],
+                "ans": 3,
+                "exp": "最后一段的建议是每周控制在十小时左右、考试期间不加班，并尽量选择与专业相关的岗位。A 的完全放弃、B 的越多越好、C 的只看工资都不符合作者提倡的平衡做法。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-09",
+        "title": "主题：现代社区邻里关系的变化",
+        "intro": "注意文中今昔对比的线索，以及最后一段作者给出的重建邻里关系的方法。",
+        "passage": "In traditional neighborhoods, people knew their neighbors well. They borrowed salt from each other, watched each other's children, and gathered in the yard after dinner. In many cities today, however, this picture has changed. Residents of large apartment buildings may live next door to someone for years without learning his or her name. A study in several Chinese cities reported that fewer than one in four people could name three of their neighbors, and about thirty percent said they never spoke to the people living closest to them.\nSeveral forces have pushed neighbors apart. Long working hours and heavy traffic mean that people return home late and leave early, so there is little time for a chat in the hallway. Mobile phones and social media also play a role: when entertainment and friendship are only a screen away, the person next door seems less necessary. Besides, young people move far more often than their parents did, and they may feel there is little point in building ties that will soon be broken.\nThis distance has a cost. Researchers have found that people who know their neighbors tend to feel safer and report less stress. In an emergency, a close neighbor may be the first to notice that an elderly person has not appeared for two days. Children also benefit, since friendly neighbors create a wider circle of care around them. By contrast, when nobody knows anybody, small problems such as noise or parking are more likely to turn into angry arguments.\nSome communities are now trying to bring neighbors back together. They organize weekend markets, shared gardens and group activities for children, giving residents a natural reason to meet. A simple greeting in the lift or a small favor like taking in a package can also open a door. Experts say that rebuilding these ties does not require much time; what it requires is the willingness to take the first step.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "A. Modern cities should build more public spaces for residents.",
+                    "B. Neighborly relations have weakened in cities and people are trying to rebuild them.",
+                    "C. Young people today move house far more often than their parents did.",
+                    "D. Social media has completely replaced face-to-face communication."
+                ],
+                "ans": 1,
+                "exp": "文章按今昔对比展开：先讲邻里关系变淡及其原因和代价，最后讲社区正在设法重建。B 完整覆盖这条主线。C 只是第二段的一个原因，A 文中未重点讨论，D 的 completely 说法过于绝对。"
+            },
+            {
+                "kind": "choice",
+                "q": "What did the study in several Chinese cities find?",
+                "opts": [
+                    "A. Most residents were satisfied with their neighbors.",
+                    "B. People in large buildings knew each other much better.",
+                    "C. Three out of four people often visited their neighbors.",
+                    "D. About 30% of people never talked to their closest neighbors."
+                ],
+                "ans": 3,
+                "exp": "第一段末尾给出数据：about thirty percent said they never spoke to the people living closest to them。同时文中说不到四分之一的人能说出三位邻居的名字，因此 B、C 与原文相反；A 的满意度文中未提。"
+            },
+            {
+                "kind": "choice",
+                "q": "Which of the following is NOT given as a reason for the change?",
+                "opts": [
+                    "A. People spend long hours at work and on the road.",
+                    "B. Phones and social media provide entertainment and friendship.",
+                    "C. Young people move house more frequently than before.",
+                    "D. Neighborhoods have become far more dangerous than before."
+                ],
+                "ans": 3,
+                "exp": "第二段列出三个原因：工作时间长与交通拥挤、手机和社交媒体、年轻人搬家更频繁，分别对应 A、B、C。D 的治安变差文中从未出现，属于无中生有。"
+            },
+            {
+                "kind": "choice",
+                "q": "What benefit of knowing one's neighbors is mentioned in the passage?",
+                "opts": [
+                    "A. Neighbors can help reduce the cost of daily living.",
+                    "B. People tend to feel safer and report less stress.",
+                    "C. Children can receive free lessons from their neighbors.",
+                    "D. Residents no longer need to pay parking fees."
+                ],
+                "ans": 1,
+                "exp": "第三段开头直接点明：认识邻居的人 tend to feel safer and report less stress。A、C、D 都是凭常识编造的干扰项，文中没有相关表述。"
+            },
+            {
+                "kind": "choice",
+                "q": "What is the author's view on rebuilding neighborly ties?",
+                "opts": [
+                    "A. It is almost impossible in large modern cities.",
+                    "B. It depends mainly on financial support from the government.",
+                    "C. It is possible if people are willing to make the first move.",
+                    "D. It requires a large amount of free time every single week."
+                ],
+                "ans": 2,
+                "exp": "最后一句说重建邻里关系不需要很多时间，需要的是 the willingness to take the first step，即愿意主动迈出第一步。A 与文意相反，B 文中未提，D 被原文 does not require much time 直接否定。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-09",
+        "title": "主题：人工智能助手走进日常生活",
+        "intro": "先分清哪些段落讲 AI 的用途、哪些段落讲隐患，态度题要抓最后一段的用词。",
+        "passage": "Artificial intelligence is no longer a subject that only appears in science films. Today it quietly works inside many tools that people use every day. When a phone keyboard suggests the next word, when a shopping website lists products a customer may like, or when a bank calls to check an unusual payment, AI is doing the work. These systems can read huge amounts of information in seconds and find patterns that human beings would miss, so companies depend on them more and more.\nThe results are often helpful. Doctors use AI programs to examine medical images and catch signs of illness at an early stage. Language apps make it possible for travelers to talk with local people without knowing the language. Office workers ask AI to summarize long reports or correct simple grammar mistakes, which saves hours each week. For students, an AI helper can explain a difficult point again and again without losing patience, something even a good teacher may find tiring.\nYet the technology also raises difficult questions. AI learns from information created by people, so it may repeat the mistakes or unfair opinions found in that material. It can also give answers that sound confident but are simply wrong, and a user who trusts it completely may be misled. Privacy is another worry, because these systems often need personal data to work well. There are reports of companies collecting far more information than their customers realize. In addition, relying too heavily on AI may weaken basic skills such as spelling or mental calculation.\nExperts believe the answer is not to refuse the technology but to use it wisely. Users should check important facts from other sources and avoid sharing information they would not want others to see. Schools are beginning to teach students how to question an AI answer instead of accepting it at once. Used in this way, AI becomes a useful partner rather than a silent master, and the final judgment still belongs to the human being.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the passage mainly about?",
+                "opts": [
+                    "A. The long history of artificial intelligence research.",
+                    "B. The everyday uses of AI and the concerns it brings.",
+                    "C. The way engineers build and test AI systems.",
+                    "D. The reasons why companies refuse to use AI at all."
+                ],
+                "ans": 1,
+                "exp": "文章前半讲 AI 在输入法、购物、医疗、办公等场景的应用，后半讲它可能出错和泄露隐私等隐患，最后给出理性使用的建议。B 概括最全面。A、C 文中未涉及，D 与事实相反，企业其实越来越依赖 AI。"
+            },
+            {
+                "kind": "choice",
+                "q": "Which example of AI in daily life is given in the first paragraph?",
+                "opts": [
+                    "A. A robot that cooks meals at home.",
+                    "B. A program that designs new cars for factories.",
+                    "C. A phone keyboard suggesting the next word.",
+                    "D. A machine that translates films into many languages."
+                ],
+                "ans": 2,
+                "exp": "第一段举了三个例子，其中之一就是 a phone keyboard suggests the next word。A、B、D 看起来都与 AI 有关，但文中并未出现，属于利用常识设置的干扰项。"
+            },
+            {
+                "kind": "choice",
+                "q": "How can AI help office workers according to the passage?",
+                "opts": [
+                    "A. By taking the place of their managers.",
+                    "B. By writing and signing contracts for them.",
+                    "C. By summarizing long reports and correcting simple grammar.",
+                    "D. By deciding which workers should be promoted."
+                ],
+                "ans": 2,
+                "exp": "第二段明确写到办公人员让 AI summarize long reports or correct simple grammar mistakes，从而每周节省数小时。A、B、D 都超出了文中提到的辅助性工作范围。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why may AI sometimes give an answer that is wrong?",
+                "opts": [
+                    "A. Because it learns from material created by people who make mistakes.",
+                    "B. Because it is too expensive for companies to update regularly.",
+                    "C. Because it refuses to use any personal information.",
+                    "D. Because it works much more slowly than human beings."
+                ],
+                "ans": 0,
+                "exp": "第三段开头说明 AI 从人创造的信息中学习，因此可能重复其中的错误或偏见，还会给出听起来自信但实际错误的答案。B、D 与文中能在数秒内处理大量信息的描述相反，C 也与它常需个人数据的事实相反。"
+            },
+            {
+                "kind": "choice",
+                "q": "What is the author's advice on using AI?",
+                "opts": [
+                    "A. Stop using it until all its problems are solved.",
+                    "B. Let it make all the important decisions alone.",
+                    "C. Share as much personal data with it as possible.",
+                    "D. Check its answers and treat it as a helpful partner."
+                ],
+                "ans": 3,
+                "exp": "最后一段说答案不是拒绝这项技术，而是 use it wisely：核实重要信息、少暴露隐私，让 AI 成为 useful partner 而非 silent master。A 与 not to refuse 相矛盾，B、C 与作者提醒的做法相反。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-09",
+        "title": "主题：年轻人爱上逛博物馆",
+        "intro": "先读题干定位关键词，再回原文找同义替换，主旨题放在最后做。",
+        "passage": "In recent years, visiting museums has become a popular weekend activity for young people in China. Ticket booking platforms report that on holidays, many famous museums run out of tickets within minutes. Experts say this trend shows a change in how young people spend their free time. Instead of shopping or staying at home, more of them choose to walk through exhibition halls and learn something new.\nSeveral reasons explain the change. First, museums have improved their exhibitions. Many of them now use lights, sound and digital screens to tell stories, which makes history easier to understand. Second, museum shops sell creative products such as bookmarks, fridge magnets and toys based on ancient objects. These products allow visitors to take a piece of culture home. Third, social media plays a role. Young visitors like to post photos of exhibitions online, and such posts often attract their friends to visit as well.\nEducators welcome the trend. They point out that museums offer a kind of learning that classrooms cannot provide. Students can see real objects and feel the size, color and weight of history, which helps them remember what they have learned. Some schools have even started to organize museum trips as part of their regular teaching. Parents also find that these visits raise children's interest in reading and asking questions. As a result, many teachers now treat museums as a second classroom outside the school gate.\nHowever, the popularity also brings problems. In some museums, visitors take photos for a long time in front of famous works and pay little attention to the explanations. Others speak loudly or touch objects that should not be touched. Museum workers suggest that visitors read the introductions first, keep their voice down, and treat each visit as a chance to learn rather than a place to show off. After all, the value of a museum lies not in the photos we take, but in what we take away in our minds.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "A. Museums in China are facing serious money problems.",
+                    "B. Young people are turning to museums as a way to spend their free time.",
+                    "C. Social media has completely changed the way museums design exhibitions.",
+                    "D. Schools should organize more weekend trips for their students."
+                ],
+                "ans": 1,
+                "exp": "全文围绕年轻人周末爱逛博物馆这一现象展开，依次分析原因、教育意义与出现的问题，B 概括最全面。A 文中从未提到博物馆缺钱；C、D 只是文中个别细节，不能概括全篇。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to the passage, why are museum shops important to young visitors?",
+                "opts": [
+                    "A. They sell tickets at a lower price than online platforms.",
+                    "B. They provide free guide services for school groups.",
+                    "C. They let visitors take home products based on ancient objects.",
+                    "D. They help museums compete with nearby shopping centers."
+                ],
+                "ans": 2,
+                "exp": "第二段说博物馆商店售卖以古代器物为原型的书签、冰箱贴、玩具等文创产品，让参观者把文化带回家，C 与此同义。A、B 文中未提及；D 属于主观臆断，原文没有比较博物馆与商场。"
+            },
+            {
+                "kind": "choice",
+                "q": "What do educators think of museum visits?",
+                "opts": [
+                    "A. Museums should cut ticket prices for school children.",
+                    "B. Museum visits can totally replace classroom teaching.",
+                    "C. They are more useful for children than for adults.",
+                    "D. Museums give learning that classrooms cannot offer."
+                ],
+                "ans": 3,
+                "exp": "第三段明确指出博物馆提供了课堂教学无法提供的学习方式，D 为原文同义复述。A 未提及票价；B 过于绝对，原文只说部分学校把博物馆之行纳入常规教学的一部分；C 文中没有成人与儿童的比较。"
+            },
+            {
+                "kind": "choice",
+                "q": "What is the museum workers' attitude toward visitors who only take photos?",
+                "opts": [
+                    "A. They are pleased because the photos help advertise the museum.",
+                    "B. They are worried that visitors miss the real value of a visit.",
+                    "C. They are angry and want to stop all photography in museums.",
+                    "D. They are indifferent since such behavior does not affect their work."
+                ],
+                "ans": 1,
+                "exp": "工作人员建议参观者先读说明、把参观当作学习机会而非炫耀场所，说明他们担心游客只顾拍照而错过博物馆的真正价值，B 正确。A 与原文态度相反；C 中禁止拍照原文没有；D 与文意不符。"
+            },
+            {
+                "kind": "choice",
+                "q": "The phrase \"take away in our minds\" in the last paragraph is closest in meaning to ______.",
+                "opts": [
+                    "A. the photos that we share with friends online",
+                    "B. the gifts that we buy in the museum shop",
+                    "C. the knowledge and thoughts that we gain from a visit",
+                    "D. the tickets that we book before we visit a museum"
+                ],
+                "ans": 2,
+                "exp": "末句把拍照与头脑中的收获作对比，因此该短语指参观后留下的知识与感悟，C 正确。A 正是作者否定的对象；B、D 都是参观的附属物，与 in our minds 不符。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-09",
+        "title": "主题：外卖包装带来的塑料污染",
+        "intro": "细节题先找题干关键词在原文的定位句，再比对选项的同义替换。",
+        "passage": "Food delivery has changed the way many people eat. With a few taps on a phone, a hot meal arrives at the door within half an hour. This service saves time for busy workers and students, and it has created millions of jobs. In big cities, ordering a meal online has become part of daily life for many young people. However, behind the convenience lies a growing problem: every order comes with plastic boxes, bags, forks and spoons that are used once and then thrown away.\nResearchers say the amount of such waste has risen rapidly in recent years. Most plastic containers cannot be recycled easily because they are covered with oil and food leftovers. As a result, they are sent to landfills or burnt, which pollutes the air and the soil. Some of the waste also ends up in rivers and oceans, where it harms fish and other animals. Unlike paper bags, plastic can remain in nature for hundreds of years, breaking into smaller pieces but never really disappearing.\nTo deal with the problem, several steps have been taken. Some platforms now let customers choose no cutlery when they order, and many users are happy to give up the free forks and spoons. A few cities have started to collect delivery packaging separately so that clean boxes can be recycled. Meanwhile, scientists are developing containers made from plants, which break down much faster than traditional plastic and cost less than before.\nStill, experts say these efforts are not enough. The real solution, they argue, is to produce less waste in the first place. Customers can order only what they need and keep a set of tableware at the office or in their school bag. Delivery companies, for their part, should design lighter packaging and offer small rewards to users who refuse extra items. Small daily choices may not seem important, but millions of them together decide how much plastic ends up in our environment.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "A. Food delivery services are becoming too expensive for young people.",
+                    "B. Plastic waste from food delivery is a problem that needs joint efforts.",
+                    "C. Scientists have already found a cheap way to recycle plastic containers.",
+                    "D. Customers should stop ordering food online from now on."
+                ],
+                "ans": 1,
+                "exp": "全文先讲外卖的便利，再讲一次性塑料包装造成的污染，最后提出平台、城市与个人共同应对的办法，B 概括最完整。A 文中未谈价格；C 与原文这些努力还不够不符；D 过于绝对，作者并未主张停止点外卖。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why are most plastic containers hard to recycle?",
+                "opts": [
+                    "A. They are too small to be collected by machines.",
+                    "B. They are mixed with paper bags during collection.",
+                    "C. They are covered with oil and food leftovers.",
+                    "D. They are made from several different kinds of plastic."
+                ],
+                "ans": 2,
+                "exp": "第二段明确说大多数塑料餐盒因为沾满油污和食物残渣而难以回收，C 是原文的同义复述。A、B、D 都属于凭空猜测，文中没有出现这些说法。"
+            },
+            {
+                "kind": "choice",
+                "q": "What have some delivery platforms done to reduce waste?",
+                "opts": [
+                    "A. They have stopped providing plastic bags completely.",
+                    "B. They allow customers to place an order without free cutlery.",
+                    "C. They ask customers to wash the boxes and return them.",
+                    "D. They have raised the price of every single order."
+                ],
+                "ans": 1,
+                "exp": "第三段提到部分平台让顾客下单时选择不需要餐具，B 与此一致。A 中完全停止提供塑料袋原文没有；C、D 均属无中生有。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the author suggest customers do?",
+                "opts": [
+                    "A. Keep their own tableware and order only what they need.",
+                    "B. Avoid using food delivery apps during the weekdays.",
+                    "C. Buy food only from restaurants that use paper boxes.",
+                    "D. Complain to the platforms about the size of packaging."
+                ],
+                "ans": 0,
+                "exp": "最后一段作者建议顾客只点需要的量，并在办公室或书包里自备一套餐具，A 正确。B、C、D 在文中都没有出现，属于主观推断。"
+            },
+            {
+                "kind": "choice",
+                "q": "What is the author's attitude toward solving the plastic problem?",
+                "opts": [
+                    "A. Doubtful about whether it can ever be solved.",
+                    "B. Unconcerned because the problem is not serious.",
+                    "C. Proud of what the delivery industry has achieved.",
+                    "D. Hopeful but aware that much more still must be done."
+                ],
+                "ans": 3,
+                "exp": "作者先肯定已有的减量措施，又指出这些还不够，并继续给出具体建议，说明他既抱有希望又认为需要更多行动，D 正确。A 怀疑、B 漠不关心、C 自豪都与全文语气不符。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-09",
+        "title": "主题：拖延症与战胜拖延的办法",
+        "intro": "推理题要立足原文事实做一步推断，不要引入常识之外的信息。",
+        "passage": "Almost everyone puts off a task sometimes. Students leave their homework until the night before it is due, and workers delay a report until the last possible day. Psychologists call this habit procrastination. It is not simply a problem of time management; in many cases, it has more to do with our feelings than with our schedules. Understanding this point is the first step toward changing the habit.\nResearch shows that people often delay a task because it makes them anxious. A difficult report, a hard conversation or a long essay can produce uncomfortable emotions, and putting the task off brings short-term relief. Unfortunately, the relief does not last. As the deadline comes closer, stress grows, the work is done in a hurry, and the result is usually worse than it could have been. The person then feels guilty, which makes the next task even harder to begin. In this way, procrastination creates a cycle that is hard to break on our own.\nExperts suggest several practical ways to deal with it. The first is to make the task smaller. Writing open the textbook and read two pages feels much easier than writing finish the paper, and once we start, we often continue. The second is to remove distractions: putting the phone in another room for an hour can make a surprising difference. The third is to be kind to ourselves. Studies find that students who forgive themselves for past delays are less likely to repeat the mistake the next time.\nSchools and companies can also help. Teachers can set several small deadlines instead of one big one, so students receive feedback before the final date. Managers can make goals clearer and check progress regularly. But in the end, the habit belongs to each of us. Procrastination is not a sign that a person is lazy or weak; it is a common human reaction to difficult feelings. Learning to start, even badly, is often the most useful skill of all.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "A. Procrastination is mainly caused by poor time management skills.",
+                    "B. Procrastination is linked to emotions and can be reduced with practical steps.",
+                    "C. Students procrastinate far more often than office workers do.",
+                    "D. Teachers should give students fewer tasks to finish each term."
+                ],
+                "ans": 1,
+                "exp": "全文指出拖延更多与情绪有关，并给出拆分任务、减少干扰、自我宽容等可行办法，B 概括准确。A 与首段不是时间管理问题相反；C 文中未做人群比较；D 只是末段的一个细节。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to the passage, why does putting off a task give short-term relief?",
+                "opts": [
+                    "A. Because the task usually becomes much easier later on.",
+                    "B. Because other people will finally do the task for them.",
+                    "C. Because it lets people escape uncomfortable feelings for a while.",
+                    "D. Because deadlines are often moved to a later date."
+                ],
+                "ans": 2,
+                "exp": "第二段说困难任务会引发焦虑等不适情绪，而拖延能带来短期的缓解，C 与原文一致。A、B、D 在文中都没有依据，属于凭常识编造的干扰项。"
+            },
+            {
+                "kind": "choice",
+                "q": "What do studies find about students who forgive themselves for past delays?",
+                "opts": [
+                    "A. They are less likely to procrastinate again next time.",
+                    "B. They usually finish their work more slowly than others.",
+                    "C. They care much less about their grades than before.",
+                    "D. They need stricter rules from their teachers."
+                ],
+                "ans": 0,
+                "exp": "第三段末句说原谅自己过去拖延的学生下次再犯的可能性更小，A 是同义替换。B、C、D 文中均未提及，属于无中生有。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the author mean by saying \"Learning to start, even badly\"?",
+                "opts": [
+                    "A. Poor work is acceptable as long as it is handed in on time.",
+                    "B. Skills should be learned step by step from the very beginning.",
+                    "C. People should avoid tasks that they cannot do very well.",
+                    "D. Beginning imperfectly is better than waiting for the perfect moment."
+                ],
+                "ans": 3,
+                "exp": "结合前文拖延源于怕难、怕做不好，这句话强调先动起来比等待完美时机更重要，D 正确。A 曲解为认可低质量作业；B、C 脱离上下文语境。"
+            },
+            {
+                "kind": "choice",
+                "q": "Which of the following best describes the author's attitude toward people who procrastinate?",
+                "opts": [
+                    "A. Angry and impatient.",
+                    "B. Understanding and supportive.",
+                    "C. Cold and indifferent.",
+                    "D. Doubtful and disapproving."
+                ],
+                "ans": 1,
+                "exp": "末段明确说拖延不代表懒惰或软弱，而是人对困难情绪的常见反应，可见作者持理解、体谅的态度，B 正确。A 生气、C 冷漠、D 不以为然都与全文语气不符。"
             }
         ]
     }
