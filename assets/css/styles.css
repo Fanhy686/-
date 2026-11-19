@@ -174,6 +174,37 @@ input:focus,select:focus{outline:2px solid rgba(217,154,43,.4);border-color:var(
   border-radius:12px;
 }
 
+/* ===== 长篇阅读（段落信息匹配） ===== */
+.lr-passage{margin-top:12px}
+.lr-para{
+  position:relative;margin:0;padding:9px 10px 9px 40px;
+  font-size:15px;line-height:1.9;border-bottom:1px dashed var(--line);
+  border-radius:8px;transition:background .3s;
+}
+.lr-para:last-child{border-bottom:none}
+.lr-para .lr-tag{
+  position:absolute;left:8px;top:10px;width:24px;height:24px;border-radius:6px;
+  background:rgba(31,42,68,.08);color:var(--ink-soft);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:13px;font-family:var(--font-serif);
+}
+.lr-para.flash{background:rgba(217,154,43,.22)}
+.lr-para.hit{background:rgba(46,125,87,.10)}
+
+.lr-q{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--paper);margin-bottom:12px;transition:.15s}
+.lr-q.ok{border-color:var(--good);background:rgba(46,125,87,.06)}
+.lr-q.no{border-color:var(--bad);background:rgba(180,69,47,.05)}
+.lr-q-top{display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.lr-q-top .badge{background:rgba(217,154,43,.16);color:var(--accent-deep);border-radius:7px;padding:1px 9px;font-size:13px;font-weight:700;flex:none}
+.lr-q-txt{flex:1;min-width:200px;font-size:15px;line-height:1.7}
+.lr-sel{flex:none;min-width:74px;text-align:center;font-weight:700}
+.lr-q.ok .lr-sel{border-color:var(--good);color:var(--good)}
+.lr-q.no .lr-sel{border-color:var(--bad);color:var(--bad)}
+.lr-exp{display:none;margin-top:10px;font-size:14px;color:var(--ink-soft);background:rgba(31,42,68,.04);border-radius:8px;padding:10px 12px;line-height:1.8}
+.lr-exp.show{display:block}
+.lr-exp b{color:var(--accent-deep)}
+.lr-loc{margin-left:6px;vertical-align:middle}
+
 /* ===== 悬浮查词球 ===== */
 .tag.lvx{background:rgba(46,125,87,.12);border-color:rgba(46,125,87,.4);color:var(--good);font-weight:700}
 .pos{display:inline-block;background:rgba(31,42,68,.07);border-radius:6px;padding:1px 8px;font-size:13px;color:var(--ink-soft)}
