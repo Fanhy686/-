@@ -1,6 +1,6 @@
 /* 每日阅读更新（自动生成，每天追加 2–3 篇仔细阅读） */
 window.READING_DAILY = {
-  updated: "2026-10-09",
+  updated: "2026-10-16",
   passages: [
     {
         "type": "仔细阅读 · Careful Reading",
@@ -1034,6 +1034,420 @@ window.READING_DAILY = {
                 ],
                 "ans": 1,
                 "exp": "末段明确说拖延不代表懒惰或软弱，而是人对困难情绪的常见反应，可见作者持理解、体谅的态度，B 正确。A 生气、C 冷漠、D 不以为然都与全文语气不符。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-14",
+        "title": "主题：大学生的心理压力与主动求助",
+        "intro": "先通读全文把握结构：压力现状—沉默原因—学校举措—态度转变，再逐题回原文定位。",
+        "passage": "University students today face far more pressure than people usually imagine. They must deal with heavy coursework, competitive exams, part-time jobs and the difficult task of finding a job after graduation. Many of them also live away from home for the first time, so they have to manage money, relationships and daily problems on their own. According to a recent survey carried out at several Chinese universities, more than twenty percent of students said they often felt nervous or hopeless, yet only a small number of them had ever asked a professional for help.\nWhy do so many students keep silent? The main reason is shame. In many families, mental trouble is still misunderstood as a sign of weakness, and young people are told to be strong and independent. Students also worry about what others may think. They fear that classmates will treat them differently, or that teachers will record their names and this will affect their grades. As a result, they hide their feelings, pretend that everything is fine, and try to solve the problem alone, which often makes the situation worse over time.\nUniversities are now taking action. Most of them have set up counseling centers where trained teachers offer free and private talks. Some schools invite students to simple group activities such as drawing, running or gardening, which help them relax and meet new people. Others use online questionnaires at the beginning of each term to find out who may need attention. Recently, several universities have also trained student volunteers, because young people usually prefer to talk with someone of their own age rather than an adult they do not know.\nStill, experts say that services alone are not enough. Families and society must change their attitude. Mental health is not a personal failure; it is a normal part of life, just like physical health. If a student feels sad for weeks, loses interest in study or has trouble sleeping, asking for help early can prevent a small problem from becoming a serious one. Learning to care for one's own mind may be one of the most useful lessons a university can offer.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "A. University students are under heavy pressure and should learn to seek help in time.",
+                    "B. Most Chinese universities fail to offer any help to their students.",
+                    "C. Surveys show that students care much more about grades than about health.",
+                    "D. Mental problems are far more common among students than among adults."
+                ],
+                "ans": 0,
+                "exp": "文章先说明大学生心理压力普遍而求助者很少，接着分析沉默的原因和学校的应对举措，最后指出家庭与社会应改变态度、及早求助，A 完整概括了这条主线。B 与第三段“多数高校已设咨询中心”相反；C 属于无中生有，文中并未比较成绩与健康；D 把范围扩大到与成年人作比较，原文没有这一对比。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to the survey mentioned in the first paragraph, more than twenty percent of students ______.",
+                "opts": [
+                    "A. had visited a school counseling center",
+                    "B. often felt nervous or hopeless",
+                    "C. failed to finish their coursework",
+                    "D. gave up looking for a job"
+                ],
+                "ans": 1,
+                "exp": "第一段末句明确写道，超过百分之二十的学生表示经常感到紧张或绝望，B 与原文完全一致。A 与“只有少数人曾寻求专业帮助”正好相反；C 和 D 在文中均找不到依据。"
+            },
+            {
+                "kind": "choice",
+                "q": "What have some universities done to help students relax?",
+                "opts": [
+                    "A. They have cut down the amount of coursework.",
+                    "B. They have organized simple group activities such as drawing and running.",
+                    "C. They have invited parents to live on campus.",
+                    "D. They have offered part-time jobs to students in need."
+                ],
+                "ans": 1,
+                "exp": "第三段提到部分学校邀请学生参加绘画、跑步、园艺等简单的集体活动，帮助他们放松并结识新朋友，B 与此相符。A、C、D 三项在文中都找不到对应信息。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why are student volunteers trained in several universities?",
+                "opts": [
+                    "A. Volunteers can help students get higher grades.",
+                    "B. Teachers usually charge a high fee for their service.",
+                    "C. Volunteers are better trained than professional teachers.",
+                    "D. Volunteers are about the same age and easier for students to trust."
+                ],
+                "ans": 3,
+                "exp": "第三段末句说年轻人通常更愿意和同龄人交谈，而不是不熟悉的长辈，由此可推断同龄志愿者让他们更容易放下戒备，选 B。A 与“受过训练的老师”矛盾；C 与“免费”矛盾；D 文中毫无依据。"
+            },
+            {
+                "kind": "choice",
+                "q": "The word \"shame\" in the second paragraph is closest in meaning to ______.",
+                "opts": [
+                    "A. the uncomfortable feeling of being disgraced",
+                    "B. a serious lack of money",
+                    "C. a kind of physical illness",
+                    "D. heavy pressure from schoolwork"
+                ],
+                "ans": 0,
+                "exp": "第二段用 shame 回答“学生为何保持沉默”，随后说明心理问题被误解为软弱、学生担心别人的眼光，可见 shame 指“羞耻、不好意思”的心理，选 A。B、C、D 均与该段语境不符。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-14",
+        "title": "主题：二手交易平台为何流行起来",
+        "intro": "注意第二段的两个原因和第三段买卖双方各自的风险，细节题常在这里设题。",
+        "passage": "In the past few years, buying and selling second-hand goods online has become common among young Chinese people. On several popular platforms, users can post a photo of an unused bicycle, a textbook or a coat, set a price, and wait for a buyer from another city. Some of these platforms also provide cleaning, repair and delivery services. Reports show that tens of millions of people now trade on such apps every month, and the total value of China's second-hand market has grown quickly, although it is still much smaller than that of the United States or Japan.\nThere are several reasons for this change. The most obvious one is money. New products are becoming more expensive, and young people with limited income find used goods a smart choice. A second important reason is the change in values. Many young buyers no longer think that owning used things is embarrassing. Instead, they see it as a responsible way to live, because every reused object means less waste and less pollution. For sellers, the platforms turn things that take up space at home into cash, which feels much better than simply throwing them away.\nHowever, problems remain. Buyers sometimes receive an item that is quite different from the photo, and returning it can be difficult. Sellers, on the other hand, may meet buyers who pay less after receiving the goods, or who never pay at all. Because most deals happen between ordinary people rather than shops, it is hard to check quality in advance. Experts suggest that platforms should offer clearer rules, safer payment systems and honest user reviews. In this way, both sides can trade with far more confidence.\nEven so, the future looks bright. As more people accept the idea that an object can have more than one owner, second-hand trading is likely to move from a small hobby to a normal part of daily shopping. For a society that produces huge amounts of waste each year, this small change in habit may matter more than it appears.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the passage mainly about?",
+                "opts": [
+                    "A. The rise of online second-hand trading and the problems it still faces.",
+                    "B. The reasons why new products are becoming more expensive.",
+                    "C. How to take attractive photos for online shopping.",
+                    "D. The difference between Chinese and American markets."
+                ],
+                "ans": 0,
+                "exp": "文章先介绍二手交易平台在中国的流行，再分析其兴起原因，接着指出买卖双方遇到的问题，最后展望前景，A 完整覆盖了全文结构。B 只是第二段的一个细节；C 文中未讨论；D 只在第一段被顺带提及，并非主题。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why do many young people choose to buy used goods?",
+                "opts": [
+                    "A. Used goods are usually of better quality than new ones.",
+                    "B. They want to save money and produce less waste.",
+                    "C. They can no longer find new products in shops.",
+                    "D. The platforms require them to do so."
+                ],
+                "ans": 1,
+                "exp": "第二段列出两个原因：省钱和减少浪费，B 两项都包含。A 与第三段“交易前很难检查质量”不符；C 和 D 在文中都没有依据。"
+            },
+            {
+                "kind": "choice",
+                "q": "What problem may sellers meet on these platforms?",
+                "opts": [
+                    "A. Buyers who pay less after receiving the goods.",
+                    "B. Buyers who refuse to leave any photos.",
+                    "C. Platforms that charge very high taxes.",
+                    "D. Shops that sell the same goods more cheaply."
+                ],
+                "ans": 0,
+                "exp": "第三段明确提到卖家可能遇到收货后压价甚至干脆不付款的买家，A 与原文一致。B、C、D 三项在文中均未出现。"
+            },
+            {
+                "kind": "choice",
+                "q": "What do experts advise the platforms to do?",
+                "opts": [
+                    "A. To stop deals between ordinary people.",
+                    "B. To provide clearer rules and safer payment systems.",
+                    "C. To sell new products instead of used ones.",
+                    "D. To close their repair and delivery services."
+                ],
+                "ans": 1,
+                "exp": "第三段末句专家建议平台提供更清晰的规则、更安全的支付系统和真实的用户评价，B 与此完全一致。A 与“让双方更有信心地交易”相悖；C、D 文中没有依据。"
+            },
+            {
+                "kind": "choice",
+                "q": "The word \"embarrassing\" in the second paragraph is closest in meaning to ______.",
+                "opts": [
+                    "A. cheap and useful",
+                    "B. hard to understand",
+                    "C. making one feel uncomfortable",
+                    "D. popular among young people"
+                ],
+                "ans": 2,
+                "exp": "第二段说许多年轻人不再认为拥有二手物品是 embarrassing，反而把它看作负责任的生活方式，转折关系表明该词意为“令人难堪的”，选 C。A、B、D 都不符合这一语境。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-14",
+        "title": "主题：久坐的危害与办公室微运动",
+        "intro": "留意第一段的研究结论、第二段的原因解释和最后一段“两者都重要”的总结。",
+        "passage": "Many office workers spend eight hours or more sitting at a desk every day. After work, they sit again on the bus or on the sofa, and by the end of the day they may have been sitting for twelve hours. Doctors call this a sedentary lifestyle and warn that it is harmful to health. Research has shown that people who sit for long periods have a higher risk of heart disease, weight gain and back pain. What is worse, exercising for half an hour after work does not fully cancel the damage done by a whole day of sitting.\nThe reason is simple. When a person sits still, the large muscles in the legs stop working, and the body burns far less energy. Blood moves more slowly, and the level of sugar and fat in the blood becomes harder to control. Over months and years, these small changes add up. Studies also suggest that long sitting may affect mood and sleep, so people often feel tired even after a full night in bed. This explains why some young workers who appear healthy still feel uncomfortable most of the time.\nThe good news is that small changes can help. Doctors advise workers to stand up and move for two or three minutes every half hour. Walking to a colleague instead of sending a message, taking the stairs, or drinking water from a farther place are all useful. Some companies have bought desks that can be raised, allowing workers to stand while using the computer. Others start meetings with a few minutes of simple stretching. These actions look tiny, but they break up long periods of sitting.\nOf course, such habits are not a replacement for real exercise. Health organizations still advise adults to do at least 150 minutes of moderate activity a week, such as fast walking, cycling or swimming. The key message is that both matter: regular exercise keeps the body strong, while frequent small movements protect it during the long hours in between. Sitting less, it seems, may be as important as exercising more.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "A. Long sitting is harmful and should be broken up by frequent movement.",
+                    "B. Office workers should give up their jobs in order to stay healthy.",
+                    "C. Half an hour of exercise after work solves all health problems.",
+                    "D. Companies must buy a standing desk for every worker."
+                ],
+                "ans": 0,
+                "exp": "文章先说明久坐的危害，再解释原因，然后建议用频繁的小活动打断久坐，最后强调运动仍不可少，A 概括最全面。B 过于极端且文中未提；C 与第一段末“半小时运动无法完全抵消伤害”相反；D 只是第三段的一个例子。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to the passage, long sitting may lead to all of the following EXCEPT ______.",
+                "opts": [
+                    "A. heart disease",
+                    "B. back pain",
+                    "C. better sleep",
+                    "D. weight gain"
+                ],
+                "ans": 2,
+                "exp": "第一段列出心脏病、体重增加和背痛，第二段又说久坐可能影响情绪和睡眠，因此“睡眠更好”不在其中，选 C。A、B、D 都是原文明确提到的风险。"
+            },
+            {
+                "kind": "choice",
+                "q": "What do doctors advise office workers to do?",
+                "opts": [
+                    "A. To exercise hard for two hours every evening.",
+                    "B. To stand up and move for a few minutes every half hour.",
+                    "C. To sleep for at least ten hours every night.",
+                    "D. To stop using computers completely at work."
+                ],
+                "ans": 1,
+                "exp": "第三段首句明确建议每半小时站起来活动两三分钟，B 与原文一致。A 把时长夸大；C 和 D 在文中毫无依据。"
+            },
+            {
+                "kind": "choice",
+                "q": "What can we infer from the last paragraph?",
+                "opts": [
+                    "A. Small movements alone are enough to keep people healthy.",
+                    "B. Both regular exercise and frequent small movements are important.",
+                    "C. Standing desks are more useful than any kind of sport.",
+                    "D. Adults should sit for less than two hours a week."
+                ],
+                "ans": 1,
+                "exp": "末段指出“两者都很重要”：规律运动增强体质，频繁的小动作在长时间静坐之间保护身体，故可推断 B。A 与“不能替代真正的运动”相反；C 文中无依据；D 曲解了每周150分钟运动的建议。"
+            },
+            {
+                "kind": "choice",
+                "q": "The word \"sedentary\" in the first paragraph most probably means ______.",
+                "opts": [
+                    "A. involving a great deal of sitting",
+                    "B. full of hard and tiring work",
+                    "C. short and relaxing",
+                    "D. dangerous and exciting"
+                ],
+                "ans": 0,
+                "exp": "第一段先描述上班族一天可能坐满十二小时，随后说医生把这种生活方式称为 sedentary 并警告其有害，可见该词意为“久坐的、少活动的”，选 A。B、C、D 与上下文均不相符。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-16",
+        "title": "主题：电子支付与无现金社会的喜与忧",
+        "intro": "先读题干、圈出关键词，再回原文定位段落。注意区分事实细节与作者态度。",
+        "passage": "In many Chinese cities, cash has almost disappeared from daily life. People pay for breakfast, bus rides and even small street snacks with a smartphone. A survey of urban residents found that more than ninety percent had used mobile payment in the past month, and over half said they carried less than fifty yuan in cash. For young people, a phone without a payment app feels almost as inconvenient as leaving home without keys. Many small shops now put a printed code at the door instead of a cash box, and street performers accept online tips as well.\nThis change brings clear benefits. Shoppers no longer need to wait for change, and small businesses can keep better records of their daily sales. Street vendors who once worried about fake notes now receive money directly into their bank accounts. During busy hours, a quick scan is much faster than counting coins, so lines move more quickly. Some cities have even introduced mobile payment on buses and in public libraries. Taxi drivers say they also feel safer because they no longer carry large amounts of cash at night.\nHowever, the cashless trend also creates problems. Elderly people who are not comfortable with smartphones sometimes find it hard to buy medicine or take a bus. Technical failures can leave a customer unable to pay at all, and a lost phone may mean a lost wallet. There are also worries about personal information, since every payment leaves a record of where a person has been and what they have bought. Experts warn that convenience should not come at the cost of fairness. Some shoppers also say they spend more than planned, because tapping a phone feels less real than handing over notes.\nTo deal with these issues, several cities have asked shops and hospitals to keep accepting cash. Volunteers in community centers teach older residents how to use payment apps safely, and some apps have added simple modes with larger letters. A truly modern society, many people now argue, should leave room for everyone, whether they pay with a phone or with paper money.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "Mobile payment is becoming common in Chinese cities, but it also brings problems for certain groups.",
+                    "Cash will completely disappear from Chinese cities in the near future.",
+                    "Young Chinese people never carry cash when they go out.",
+                    "Old people are strongly advised to stop using smartphones."
+                ],
+                "ans": 0,
+                "exp": "全文先讲手机支付在城市里普及并带来便利，后两段转而说明老年人和信息安全方面的问题，属于「普及+隐忧」的结构，A 项概括完整。B 项把 almost disappeared 说成完全消失，过于绝对；C 项的 never 与原文不符，原文只说不习惯带现金；D 项与末段教老人使用支付软件的内容相反。"
+            },
+            {
+                "kind": "choice",
+                "q": "What did over half of the people in the survey say?",
+                "opts": [
+                    "They used mobile payment every day.",
+                    "They had trouble using payment apps.",
+                    "They preferred cash to mobile payment.",
+                    "They carried less than fifty yuan in cash."
+                ],
+                "ans": 3,
+                "exp": "第一段明确提到 over half said they carried less than fifty yuan in cash，D 项与原文一致。A 项偷换了原文的 in the past month（一个月内用过）为每天使用；B 项是老年人的情况，不是调查结果；C 项与调查结果相反。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to Paragraph 2, how do street vendors benefit from mobile payment?",
+                "opts": [
+                    "They can sell more goods than before.",
+                    "They no longer need to keep records of sales.",
+                    "They do not have to worry about fake money.",
+                    "They can avoid paying taxes on their sales."
+                ],
+                "ans": 2,
+                "exp": "第二段说 vendors who once worried about fake notes now receive money directly，即不再担心假币，C 项正确。A 项文中未提销量增加；B 项把 can keep better records 说反了；D 项属于凭空添加的税务内容，原文没有涉及。"
+            },
+            {
+                "kind": "choice",
+                "q": "What is the attitude of the experts toward the cashless trend?",
+                "opts": [
+                    "Fully supportive.",
+                    "Cautious.",
+                    "Strongly opposed.",
+                    "Uninterested."
+                ],
+                "ans": 1,
+                "exp": "第三段末句 Experts warn that convenience should not come at the cost of fairness，warn 表明专家持谨慎保留态度，B 项恰当。A 项完全支持、C 项强烈反对都过于极端；D 项与专家主动提醒的事实矛盾。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the expression paper money in the last paragraph most probably mean?",
+                "opts": [
+                    "A bank card.",
+                    "A payment app.",
+                    "A sales record.",
+                    "Money made of paper, that is, cash."
+                ],
+                "ans": 3,
+                "exp": "末段对比 whether they pay with a phone or with paper money，前者是手机支付，后者显然是纸币现金，D 项正确。A、B 两项都是无现金支付工具，与 or 前的 phone 重复；C 项与支付手段无关，不符合语境。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-16",
+        "title": "主题：城市养宠增多与文明养宠",
+        "intro": "先读题干、圈出关键词，再回原文定位段落。注意区分事实细节与作者态度。",
+        "passage": "The number of pets in Chinese cities has grown quickly in recent years. Young workers who live alone often describe their cat or dog as a family member rather than an animal. Pet shops, pet hospitals and even pet cafés can now be found in almost every neighborhood. According to one report, urban residents spent more on pet food and medical care last year than in any earlier year, and the market is still growing. Owners also share photos and videos of their animals online, where a few pets have become quite famous.\nThere are good reasons behind this trend. Many young people have moved to big cities far from their parents, and a pet offers companionship after a long working day. Feeding and walking a dog also forces its owner to keep a regular schedule and spend more time outdoors. Doctors have noticed that some owners report lower levels of stress and a stronger sense of responsibility. For families with children, a pet can also teach patience and kindness.\nAt the same time, the rise in pet numbers has led to conflicts in public spaces. Noise from dogs late at night troubles neighbors, and pets that are not kept on a lead sometimes scare children in the park. In some communities, dirty sidewalks have become a daily complaint. A few cities have introduced rules that require owners to clean up after their animals and to keep dogs on leads in public areas, with fines for those who break them. Delivery workers say that unfriendly dogs also make their daily work more difficult.\nStill, rules alone cannot solve the problem. Animal doctors and community workers suggest that new owners should learn basic training skills before bringing a pet home. Public areas for dogs, separate from playgrounds, would also make conflicts less likely. In the end, keeping a pet happily depends not only on love for the animal but also on respect for the people living next door.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the best title for this passage?",
+                "opts": [
+                    "Pet cafés are becoming a new business in Chinese cities.",
+                    "Keeping pets is healthier than living alone in big cities.",
+                    "More city residents keep pets, and this brings both joy and conflicts.",
+                    "Cities should stop residents from keeping large dogs."
+                ],
+                "ans": 2,
+                "exp": "文章前两段讲城市养宠增多及带来的陪伴与减压，第三段讲噪音、卫生等邻里冲突，末段给出建议，C 项「增多+喜忧并存」概括最全面。A 项只是第一段的一个细节；B 项文中没有把养宠与独居做健康对比；D 项的建议原文从未出现。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the report mentioned in Paragraph 1 show?",
+                "opts": [
+                    "Urban residents spent more on pet food and medical care than before.",
+                    "Pet shops have replaced pet hospitals in most neighborhoods.",
+                    "The number of pets in cities began to fall last year.",
+                    "Young workers prefer dogs to cats as pets."
+                ],
+                "ans": 0,
+                "exp": "第一段末句说 spent more on pet food and medical care last year than in any earlier year，即花费创下新高，A 项正确。B 项把 shops 与 hospitals 并列关系说成取代；C 项与首段数量增长相反；D 项文中未比较猫狗偏好。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why do many young people keep a pet, according to Paragraph 2?",
+                "opts": [
+                    "They want to save money on medical care.",
+                    "They feel less lonely living away from their families.",
+                    "They are required to do so by their communities.",
+                    "They hope to make money from the growing market."
+                ],
+                "ans": 1,
+                "exp": "第二段指出年轻人 moved to big cities far from their parents，宠物提供 companionship（陪伴），B 项是对此的同义转述。A 项与花钱增多的事实相反；C、D 两项的「社区要求」和「赚钱」在原文中均无依据。"
+            },
+            {
+                "kind": "choice",
+                "q": "What do some cities require dog owners to do in public areas?",
+                "opts": [
+                    "Pay a yearly tax for each animal.",
+                    "Take their dogs to training classes every week.",
+                    "Keep their pets away from pet cafés.",
+                    "Clean up after their pets and keep dogs on leads."
+                ],
+                "ans": 3,
+                "exp": "第三段明确说 require owners to clean up after their animals and to keep dogs on leads，D 项完全对应。A 项的年税、B 项的每周训练课、C 项的宠物咖啡馆限制都是原文没有的内容。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the author suggest in the last paragraph?",
+                "opts": [
+                    "Rules are not enough; owners also need training and respect for neighbors.",
+                    "Cities should build more playgrounds for children.",
+                    "People should stop keeping dogs in crowded communities.",
+                    "Pet owners should pay higher fines for every complaint."
+                ],
+                "ans": 0,
+                "exp": "末段首句 rules alone cannot solve the problem，接着建议先学训练技巧、设专用场地，并强调 respect for the people living next door，A 项概括准确。B 项只提到 playgrounds 的隔离，片面；C、D 两项都比作者建议更极端，原文并未要求禁养或加重罚款。"
+            }
+        ]
+    },
+    {
+        "type": "仔细阅读 · Careful Reading",
+        "date": "2026-10-16",
+        "title": "主题：青少年近视率上升与户外活动",
+        "intro": "先读题干、圈出关键词，再回原文定位段落。注意题干中段落序号的提示。",
+        "passage": "Short-sightedness has become one of the most common health problems among Chinese teenagers. Recent studies show that more than half of middle school students now need glasses, and the number rises to over eighty percent by the end of high school. Eye doctors say the situation has grown worse in the last ten years, and children are becoming short-sighted at a younger age than before. In some classrooms, teachers say it is now unusual to see a teenager without glasses.\nThe main causes are well known. Students spend long hours reading, doing homework and using digital devices, often in poor light. Outdoor activity, by contrast, has dropped sharply. Many children now spend less than one hour a day outside, because heavy homework, extra classes and the attraction of phones and games keep them indoors. Parents often feel proud when their children study for hours, so they seldom send them out to play. Research has found that children who stay outside for two hours a day are much less likely to develop the problem.\nWhy does outdoor time matter? Scientists believe that natural light is the key. Bright daylight encourages the eye to develop in a healthier way and slows the changes that lead to short-sightedness. In addition, when children play outside, they look at objects at different distances instead of fixing their eyes on a near screen for hours. Resting the eyes is helpful, but the light itself appears to play the larger role.\nSchools and parents are beginning to act. Some primary schools have added longer breaks and asked teachers to move part of the class outdoors when the weather allows. Parents are encouraged to walk with their children after dinner instead of letting them watch videos. Eye doctors also advise regular checks, since problems found early are easier to control. Special clinics for children have become hard to book during holidays. Glasses can correct sight, but they cannot stop the problem from getting worse, so prevention remains the best medicine.",
+        "questions": [
+            {
+                "kind": "choice",
+                "q": "What is the main idea of the passage?",
+                "opts": [
+                    "Glasses are the best way to deal with short-sightedness.",
+                    "Teenage short-sightedness is serious, and outdoor activity helps prevent it.",
+                    "Digital devices should be completely banned for children.",
+                    "Chinese schools have already solved the problem of poor eyesight."
+                ],
+                "ans": 1,
+                "exp": "文章先说明近视率高且低龄化，再分析久坐室内和使用电子产品的原因，接着重点讲户外光照的保护作用，末段给出预防建议，B 项最全面。A 项与末段 glasses cannot stop the problem 相反；C 项的 completely banned 原文没有；D 项与正在采取措施进行中的表述不符。"
+            },
+            {
+                "kind": "choice",
+                "q": "What do the studies in Paragraph 1 show?",
+                "opts": [
+                    "Over eighty percent of high school students are short-sighted.",
+                    "Children's eyesight has improved over the past ten years.",
+                    "Eye doctors can cure the problem completely.",
+                    "Boys are more likely to be short-sighted than girls."
+                ],
+                "ans": 0,
+                "exp": "第一段说 the number rises to over eighty percent by the end of high school，A 项符合。B 项与 grown worse in the last ten years 相反；C 项与末段只能矫正、无法阻止恶化矛盾；D 项文中未做性别比较。"
+            },
+            {
+                "kind": "choice",
+                "q": "According to the passage, how much outdoor time is connected with a lower risk?",
+                "opts": [
+                    "Less than one hour a day.",
+                    "About half an hour after dinner.",
+                    "One hour every weekend.",
+                    "Around two hours a day."
+                ],
+                "ans": 3,
+                "exp": "第二段末句指出 children who stay outside for two hours a day are much less likely to develop the problem，D 项正确。A 项的 less than one hour 是现状不足的量，不是有效量；B、C 两项是把原文细节拼凑出来的干扰项。"
+            },
+            {
+                "kind": "choice",
+                "q": "Why is outdoor light important, according to scientists?",
+                "opts": [
+                    "It makes children sleep better at night.",
+                    "It allows children to read more quickly.",
+                    "It helps the eye develop in a healthier way.",
+                    "It protects the eyes from digital screens."
+                ],
+                "ans": 2,
+                "exp": "第三段说 Bright daylight encourages the eye to develop in a healthier way，C 项与之对应。A 项的睡眠、B 项的阅读速度原文均未提及；D 项错在把「自然光」理解为屏蔽电子屏幕，原文强调光本身的作用。"
+            },
+            {
+                "kind": "choice",
+                "q": "What does the sentence prevention remains the best medicine in the last paragraph mean?",
+                "opts": [
+                    "Medicine can cure short-sightedness completely.",
+                    "Stopping the problem before it starts is better than treating it later.",
+                    "Children should take medicine whenever their eyes hurt.",
+                    "Glasses are more useful than any kind of medicine."
+                ],
+                "ans": 1,
+                "exp": "前一句说眼镜只能矫正、不能阻止恶化，因此重点是提前预防，B 项是对 prevention 的正确解释。A 项的 completely cure、C 项的吃药建议都与原文相悖；D 项颠倒了末段对眼镜作用的限定。"
             }
         ]
     }
