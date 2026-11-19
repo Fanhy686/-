@@ -4,6 +4,7 @@ const NAV = [
   { page: 'vocab',       href: 'vocab.html',       ico: '📚', label: '词汇本' },
   { page: 'listening',   href: 'listening.html',   ico: '🎧', label: '听力' },
   { page: 'reading',     href: 'reading.html',     ico: '📖', label: '阅读' },
+  { page: 'longreading', href: 'longreading.html', ico: '🗞️', label: '长篇' },
   { page: 'writing',     href: 'writing.html',     ico: '✍️', label: '写作' },
   { page: 'translation', href: 'translation.html', ico: '🌐', label: '翻译' },
   { page: 'checkin',     href: 'checkin.html',     ico: '✅', label: '打卡' },
