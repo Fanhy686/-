@@ -1,8 +1,8 @@
 /* 四级备考工作台 · Service Worker（离线可开 + 添加到主屏幕）
    策略：网络优先（在线永远拿最新内容），断网时回退缓存。 */
-const CACHE = 'cet4-v6';
+const CACHE = 'cet4-v7';
 const ASSETS = [
-  './', 'index.html', 'vocab.html', 'listening.html', 'reading.html',
+  './', 'index.html', 'vocab.html', 'listening.html', 'reading.html', 'longreading.html',
   'writing.html', 'translation.html', 'checkin.html',
   'manifest.webmanifest', 'icon.svg',
   'assets/css/styles.css',
@@ -16,6 +16,9 @@ const ASSETS = [
   'assets/js/vocab.js', 'assets/js/dictball.js',
   'assets/js/listening-data.js', 'assets/js/listening.js',
   'assets/js/reading-data.js', 'assets/js/reading-extra.js', 'assets/js/reading-daily.js', 'assets/js/reading.js',
+  'assets/js/long-reading-1.js', 'assets/js/long-reading-2.js', 'assets/js/long-reading-3.js',
+  'assets/js/long-reading-4.js', 'assets/js/long-reading-5.js', 'assets/js/long-reading-meta.js',
+  'assets/js/longreading.js',
   'assets/js/writing-data.js', 'assets/js/writing.js',
   'assets/js/translation-data.js', 'assets/js/translation.js',
   'assets/js/checkin.js'
