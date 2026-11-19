@@ -8,7 +8,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon.svg">
-<link rel="stylesheet" href="assets/css/styles.css?v=6">
+<link rel="stylesheet" href="assets/css/styles.css?v=7">
 </head>
 <body data-page="index">
 <aside id="sidebar"></aside>
@@ -57,6 +57,7 @@
 <script src="assets/js/store.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/vocab-meta.js"></script>
+<script src="assets/js/long-reading-meta.js"></script>
 <script src="assets/js/reading-data.js"></script>
 <script src="assets/js/reading-extra.js"></script>
 <script src="assets/js/reading-daily.js"></script>
@@ -65,6 +66,7 @@
     { key:'vocab', href:'vocab.html', ico:'📚', title:'词汇本', desc:'四级高频核心词闪卡，标记已掌握' },
     { key:'listening', href:'listening.html', ico:'🎧', title:'听力', desc:'精听/跟读方法 + 真实听力文本' },
     { key:'reading', href:'reading.html', ico:'📖', title:'阅读', desc:'仔细阅读 · 真题篇幅，每天自动更新' },
+    { key:'longreading', href:'longreading.html', ico:'🗞️', title:'长篇阅读', desc:'十五段信息匹配 · 10 题，5 篇真题篇幅' },
     { key:'writing', href:'writing.html', ico:'✍️', title:'写作', desc:'三段式模板、句型库与范文' },
     { key:'translation', href:'translation.html', ico:'🌐', title:'翻译', desc:'中国文化类真实素材与对照' },
     { key:'checkin', href:'checkin.html', ico:'✅', title:'打卡', desc:'每日任务清单 + 连续天数' },
@@ -81,11 +83,14 @@
     const listeningDone = (Store.get('listeningDone', []) || []).length;
     const writingCount = Store.get('writingCount', 0);
     const transDone = (Store.get('transDone', []) || []).length;
+    const lrDone = (Store.get('lrDone', []) || []).length;
+    const lrTotal = (window.LR_META && window.LR_META.total) || 5;
 
     const rows = [
       { ico:'📚', name:'词汇本', cur:mastered, max:total, unit:'词' },
       { ico:'🎧', name:'听力', cur:listeningDone, max:2, unit:'篇' },
       { ico:'📖', name:'阅读', cur:readingDone, max:readTotal, unit:'篇' },
+      { ico:'🗞️', name:'长篇阅读', cur:lrDone, max:lrTotal, unit:'篇' },
       { ico:'✍️', name:'写作', cur:writingCount, max:null, unit:'篇' },
       { ico:'🌐', name:'翻译', cur:transDone, max:10, unit:'段' },
     ];
